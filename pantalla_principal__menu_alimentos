@@ -107,27 +107,27 @@ public class restaurante {
                     System.out.println("----------------------------");
                     System.out.println("PIZZAS");
                     
-                    for (int i=0; i == valorP;i++){
+                    for (int i=0; i <= valorP;i++){
                         System.out.println(pizza[i] +" $ "+precioP[i]);
                     }
 
                     System.out.println("----------------------------");  
                     
                     System.out.println("MINUTAS");                    
-                    for (int i=0; i == valorM;i++){
+                    for (int i=0; i <= valorM;i++){
                         System.out.println(Minuta[i] +" $ "+precioM[i]);
                     }                    
                     
                     System.out.println("----------------------------");
                     
                     System.out.println("BEBIDAS");                    
-                    for (int i=0; i == valorB;i++){
+                    for (int i=0; i <= valorB;i++){
                         System.out.println(Bebida[i] +" $ "+precioB[i]);
                     }
                     System.out.println("----------------------------");
                     
                     System.out.println("SNACKS");                    
-                    for (int i=0; i == valorSNK;i++){
+                    for (int i=0; i <= valorSNK;i++){
                         System.out.println(Snack[i] +" $ "+precioSnk[i]);
                     }  
                     
@@ -192,7 +192,7 @@ public class restaurante {
                                     System.out.println("-------------------------------------");
                                     System.out.println("  Elija la opcion que desea cambiar  ");
                                     System.out.println("-------------------------------------");
-                                    for(int i = 0; i == valorM;i++){
+                                    for(int i = 0; i <= valorM;i++){
                                         System.out.println("_ "+Minuta[i]);                                    
                                     }
                                     
