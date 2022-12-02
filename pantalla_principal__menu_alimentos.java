@@ -32,7 +32,7 @@ public class restaurante {
             System.out.println("|                                        |");
             System.out.println(" ");
         
-            System.out.print("Seleccione una opci贸n: ");        
+            System.out.print("Seleccione una opci髇: ");        
             num = Integer.parseInt(teclado.next()); // Se lee opci贸n ingresada por el usuario
             
             switch(num){
@@ -59,7 +59,7 @@ public class restaurante {
                     break;
                 case 6:
                     System.out.println("|-------------------------|" );
-                    System.out.println("|--- FIN DE EJECUCI脫N --- |");
+                    System.out.println("|--- FIN DE EJECUCI覰 --- |");
                     System.out.println("|-------------------------|" );
                     break;
                 default:
@@ -79,11 +79,11 @@ public class restaurante {
         // SUBPROCESO MENU ALIMENTOS
         //**************************
         
-        int num;
-        
-        public void menu(valorM,valorSNK,valorP,valorB,aux,precioP,precioM,precioB,pizza,Bebida,Minuta,Snack,precioSNK) // Subproceso para el cambiar el menu
         
         
+        public void menu(valorM,valorSNK,valorP,valorB,aux,precioP,precioM,precioB,pizza,Bebida,Minuta,Snack,precioSNK){ // Subproceso para el cambiar el menu
+        
+        Scanner teclado = new Scanner(System.in);
         do{            
             System.out.println(" ");
             System.out.println("|-------------------------------------|");
@@ -98,7 +98,7 @@ public class restaurante {
             System.out.println("|-------------------------------------|");
             System.out.println(" ");
             
-            num = Integer.parseInt(teclado.next()); // Se lee opci贸n ingresada por el usuario
+            int num = Integer.parseInt(teclado.next()); // Se lee opci贸n ingresada por el usuario
             
             switch(num){
             
