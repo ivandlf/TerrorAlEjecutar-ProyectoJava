@@ -18,7 +18,7 @@ public class Comandas {
 	int ordenes;
         int ordenessumatoria;
 	double pagoB = 0;
-        double pagoV = 0;
+        double pagoC = 0;
 	double pagoCA = 0;
 	double salario = 0;
         double Shamburguesa, Sharina, Smilanesa;
@@ -129,18 +129,18 @@ public class Comandas {
 		case 1 -> {
                     // invocamos al subProceso: Controlstock(Gastos,Ganancias)
                     // Subproceso de opcion1 Stock
-                    controlstock(bebida,valorb,sbebida,ssnack,snack,valorsnk,gastos,ganancias,shamburguesa,squeso,spanl,spanh,sharina,smilanesa);
+                    controlstock(bebida,valorB,Sbebida,Ssnack,snack,valorSNK,gastos,ganancias,Shamburguesa,Squeso,SpanL,SpanH,Sharina,Smilanesa);
                     // invocamos al SubProceso: Jornales(Gastos)
                 }
 		case 2 ->{ 
-                    jornales(semana,horas,horasc,horasb,horasca,gastos,cocinero,barman,cajero,semana,banderaco,banderab,banderaca,horasc,horasb,horasca,salario,horast,horas,pagob,pagoc,pagoca);
+                    jornales(semana,horas,horasC,horasB,horasCA,gastos,cocinero,barman,cajero,semana,banderaCo,banderaB,banderaCa,horasC,horasB,horasCA,salario,horasT,horas,pagoB,pagoC,pagoCA);
                     // invocamos al subProceso: Men?
                 }
-		case 3 ->{ menu(valorm,valorsnk,valorp,valorb,aux,preciop,preciom,preciob,pizza,bebida,minuta,snack,preciosnk);		
+		case 3 ->{ menu(valorM,valorSNK,valorP,valorB,precioP,precioM,precioB,pizza,bebida,minuta,snack,precioSNK);		
                 }
                 // invocamos al subProceso: Comandas
 		case 4 ->{ 
-                    Comandas(ganancias,sbebida,valorm,valorsnk,valorp,valorb,shamburguesa,squeso,spanl,spanh,sharina,smilanesa,ordenessumatoria,listacomanda,ordenes,preciop,preciom,preciob,pizza,bebida,minuta,bandera);
+                    Comandas(ganancias,Sbebida,valorM,valorSNK,valorP,valorB,Shamburguesa,Squeso,SpanL,SpanH,Sharina,Smilanesa,ordenessumatoria,listacomanda,ordenes,precioP,precioM,precioB,pizza,bebida,minuta,bandera);
                     // invocamos al subProceso: Costos y Ganancias
                 }
 		case 5 ->{ 
@@ -187,7 +187,7 @@ public class Comandas {
         System.out.println("+---+----------+--------------------+--------------------+--------------------+--------------------+");
          for (int i = 0; i < 1; i++) {
             for (int j = 0; j < listaComandas[i].length; j++) {
-                if(j==0){
+                if(j == 0){
                     System.out.print("| "+listaComandas[i][0]);
                 }
                 else if(j==1){
@@ -222,7 +222,7 @@ public class Comandas {
     }
     
 
-    public static void jornales(){
+    public static void jornales(String[][] semana, double[][] horas, double[][] horasC, double[][] horasB, double[][] horasCA, double gastos, String cocinero, String barman, String cajero, String[][] semana1, String banderaCo, String banderaB, String banderaCa, double[][] horasC1, double[][] horasB1, double[][] horasCA1, double salario, double horasT, double[][] horas1, double pagoB, double pagoC, double pagoCA){
 		double i, j;
 		int num;
                 Scanner entrada = new Scanner(System.in);
