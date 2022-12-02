@@ -4,7 +4,7 @@ package comandas;
 import java.util.Scanner;
 
 public class Comandas {
-    
+
     
     public static void Comandas(double ganancias, double[] sbebida, double valorm, double valorsnk, double valorp, double valorb, double shamburguesa, double squeso, double spanl, double spanh, double sharina, double smilanesa, int ordenessumatoria, String[][] listacomanda, int orden, double[] preciop, double[] preciom, double[] preciob, String[] pizza, String[] bebida, String[] minuta, String bandera){
         Scanner entrada = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class Comandas {
         System.out.println("+---+----------+--------------------+--------------------+--------------------+--------------------+");
          for (int i = 0; i < 1; i++) {
             for (int j = 0; j < listaComandas[i].length; j++) {
-                if(j==0){
+                if(j == 0){
                     System.out.print("| "+listaComandas[i][0]);
                 }
                 else if(j==1){
@@ -68,6 +68,3 @@ public class Comandas {
     
     
 
-    
-
-	
