@@ -68,7 +68,7 @@ public static void jornales(){
 		// Definimos banderas para avisarnos cuando las jornadas no hayan sido registradas
 		
 		// asignamos un valor a HorasT 
-		horasT = 0;
+		int horasT = 0;
 		do {
 			System.out.println("");
 			System.out.println(" --------------------------------------");
