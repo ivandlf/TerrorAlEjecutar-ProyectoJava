@@ -5,6 +5,7 @@ import static comandas.Comandas.Comandas;
 import java.util.Scanner;
 import static jornales.Jornales.jornales;
 
+
 public class MenuPrincipal {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -131,28 +132,28 @@ public class MenuPrincipal {
 		case 1 -> {
                     // invocamos al subProceso: Controlstock(Gastos,Ganancias)
                     // Subproceso de opcion1 Stock
-                    controlstock(bebida,valorB,Sbebida,Ssnack,snack,valorSNK,gastos,ganancias,Shamburguesa,Squeso,SpanL,SpanH,Sharina,Smilanesa);
+                    controlstock.ControlStock.controlstock(bebida,valorB,Sbebida,Ssnack,snack,valorSNK,gastos,ganancias,Shamburguesa,Squeso,SpanL,SpanH,Sharina,Smilanesa);
                     // invocamos al SubProceso: Jornales(Gastos)
                 }
 		case 2 ->{ 
-                    jornales(semana,horas,horasC,horasB,horasCA,gastos,cocinero,barman,cajero,semana,banderaCo,banderaB,banderaCa,horasC,horasB,horasCA,salario,horasT,horas,pagoB,pagoC,pagoCA);
-                    // invocamos al subProceso: Men?
+                    jornales.Jornales.jornales(semana,horas,horasC,horasB,horasCA,gastos,cocinero,barman,cajero,semana,banderaCo,banderaB,banderaCa,horasC,horasB,horasCA,salario,horasT,horas,pagoB,pagoC,pagoCA);
+                    // invocamos al subProceso: Menu
                 }
-		case 3 ->{ menu(valorM,valorSNK,valorP,valorB,precioP,precioM,precioB,pizza,bebida,minuta,snack,precioSNK);		
+		case 3 ->{ menu.Menu.Menu(valorM,valorSNK,valorP,valorB,precioP,precioM,precioB,pizza,bebida,minuta,snack,precioSNK);		
                 }
                 // invocamos al subProceso: Comandas
 		case 4 ->{ 
-                    Comandas(ganancias,Sbebida,valorM,valorSNK,valorP,valorB,Shamburguesa,Squeso,SpanL,SpanH,Sharina,Smilanesa,ordenessumatoria,listacomanda,ordenes,precioP,precioM,precioB,pizza,bebida,minuta,bandera);
+                    comandas.Comandas.Comandas(ganancias,Sbebida,valorM,valorSNK,valorP,valorB,Shamburguesa,Squeso,SpanL,SpanH,Sharina,Smilanesa,ordenessumatoria,listacomanda,ordenes,precioP,precioM,precioB,pizza,bebida,minuta,bandera);
                     // invocamos al subProceso: Costos y Ganancias
                 }
 		case 5 ->{ 
-                    costosyganancias(ganancias,gastos);
+                    costosyganancias.CostosyGanancias.CostosyGanancias(ganancias,gastos);
                 }
                 case 6 -> {
                     break;
                 }
 		default -> {
-                    // Se muestra en pantalla un mensaje en caso de que la opci?n ingresada no exista
+                    // Se muestra en pantalla un mensaje en caso de que la opcion ingresada no exista
                     System.out.println(" ------------------------------------------------------------------------------------------ ");
                     System.out.println("|La opcion que a ingresado no es correcta. Por favor dijite una que se encuentre en el menu|");
                     System.out.println(" ------------------------------------------------------------------------------------------ ");
