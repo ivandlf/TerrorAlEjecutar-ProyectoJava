@@ -15,7 +15,6 @@ public class MenuPrincipal {
 	String cajero = null;
         String cocinero = null;
 	double ganancias, gastos, horasT = 0;
-        String listacomanda[][];
 	String minuta[];
         int num;
 	int ordenes;
@@ -35,7 +34,8 @@ public class MenuPrincipal {
         double horasC [][] = new double[1][5];
 	double horasB [][] = new double[1][5];
         double horasCA [][] = new double[1][5];
-	listacomanda = new String[50][7];
+	String[][] listacomanda;
+        listacomanda = new String[50][6];
         bebida = new String[999];
 	double precioB[] = new double[999];
         double Sbebida [] = new double[999];
@@ -57,6 +57,13 @@ public class MenuPrincipal {
         semana[0][2] = "miercoles ";
 	semana[0][3] = "Jueves ";
         semana[0][4] = "Viernes";
+        // Asignamos los titulares de la lista comandas en la matriz
+        listacomanda[0][0] = "Nº";
+        listacomanda[0][1] = "Comensales";
+        listacomanda[0][2] = "Pizzas";
+        listacomanda[0][3] = "Minutas";
+        listacomanda[0][4] = "Bebidas";
+        listacomanda[0][5] = "Total";
 	// Le damos valores a las distintas comidas,productos y stock
         ordenessumatoria = 0;
 	valorB = 2;
