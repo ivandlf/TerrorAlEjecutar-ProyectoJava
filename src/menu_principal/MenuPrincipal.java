@@ -1,7 +1,7 @@
 
 package menu_principal;
 
-import static comandas.Comandas.Comandas;
+
 import java.util.Scanner;
 import static jornales.Jornales.jornales;
 

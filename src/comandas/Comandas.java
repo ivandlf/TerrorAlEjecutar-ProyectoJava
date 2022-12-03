@@ -80,9 +80,6 @@ public class Comandas {
         listaComandas[0][4] = "Bebidas";
         listaComandas[0][5] = "Total";
         
-        for (int i = 0; i < 3; i++) {
-            System.out.println(precioP[i]);
-        }
        
         //Tomamos los pedidos
         System.out.println("ingrese la cantidad de ordenes a tomar");
@@ -91,7 +88,7 @@ public class Comandas {
             for (int j = 0; j < 5; j++) {
                 
                 switch (j) {
-                    case 2:
+                    case 2 -> {
                         System.out.println("Pizzas: ");
                         for (int k = 0; k < 4; k++) {
                             System.out.println(k+". "+pizza[k]);
@@ -100,10 +97,8 @@ public class Comandas {
                         int opcionPi = entrada.nextInt();
                         listaComandas[i][2]= pizza[opcionPi];
                         precioTotal += precioP[opcionPi];
-                        System.out.println(precioTotal);
-                        break;
-                //listaComandas[i][j]=entrada.next();
-                    case 3:
+                    }
+                    case 3 -> {
                         System.out.println("Minutas: ");
                         for (int l = 0; l < 4; l++) {
                             System.out.println(l+". "+minuta[l]);
@@ -112,9 +107,8 @@ public class Comandas {
                         int opcionMi = entrada.nextInt();
                         listaComandas[i][3]= minuta[opcionMi];
                         precioTotal += precioP[opcionMi];
-                        System.out.println(precioTotal);
-                        break;
-                    case 4:
+                    }
+                    case 4 -> {
                         System.out.println("Bebidas: ");
                         for (int m = 0; m < 4; m++) {
                             System.out.println(m+". "+bebida[m]);
@@ -123,15 +117,14 @@ public class Comandas {
                         int opcionBe = entrada.nextInt();
                         listaComandas[i][4] = bebida[opcionBe];
                         precioTotal += precioP[opcionBe];
-                        System.out.println(precioTotal);
-                        break;
-                    default:
-                        System.out.println("ingrese "+listaComandas[0][j]);
-                        listaComandas[i][j]=entrada.next();
-                        
-                        break;
+                    }
+                    default -> {
+                            System.out.println("ingrese "+listaComandas[0][j]);
+                            listaComandas[i][j]=entrada.next();
+                    }
                 }
-            }
+                //listaComandas[i][j]=entrada.next();
+                            }
             listaComandas[i][5]= "$ "+Integer.toString(precioTotal);
             precioTotal = 0;
         }
