@@ -10,10 +10,10 @@ import static jornales.CalculoJornales.calculosalario;
 public class Jornales {
     
 public static void jornales(String[][] semana, double[][] horas, double[][] horasC, double[][] horasB, double[][] horasCA, double gastos, String cocinero, String barman, String cajero, String[][] semana1, String banderaCo, String banderaB, String banderaCa, double[][] horasC1, double[][] horasB1, double[][] horasCA1, double salario, double horasT, double[][] horas1, double pagoB, double pagoC, double pagoCA){
-		double i, j;
+		int i, j;
 		int num;
                 Scanner entrada = new Scanner(System.in);
-		double opcionE = 0;
+		int opcionE = 0;
 		// A continuacion Definimos todas las variables necesarias para definir las jornadas laborales
 		// Definimos banderas para avisarnos cuando las jornadas no hayan sido registradas
 		
