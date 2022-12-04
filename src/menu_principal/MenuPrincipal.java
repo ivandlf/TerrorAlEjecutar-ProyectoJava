@@ -3,7 +3,6 @@ package menu_principal;
 
 
 import java.util.Scanner;
-import static jornales.Jornales.jornales;
 
 
 public class MenuPrincipal {
@@ -46,7 +45,7 @@ public class MenuPrincipal {
 	double Ssnack [] = new double[999];
         minuta = new String[999];
 	double precioM [] = new double[999];
-        // A continuacion definimos valores a todas la svariables necesaras para  que funcione el programa
+        // A continuacion definimos valores a todas las variables necesaras para  que funcione el programa
 	// Asignamos un valor falso a las banderas
         banderaCo = "f";
 	banderaB = "f";
@@ -138,9 +137,9 @@ public class MenuPrincipal {
 		System.out.println("|    *Opcion 6: Salir                    |");
 		System.out.println(" -----------------------------------------");
                 System.out.println("");
-		// Se lee opci?n ingresada por el usuario
+		// Se lee opcion ingresada por el usuario
 		num = entrada.nextInt();
-                System.out.println(""); // no hay forma directa de borrar la consola en Java
+                System.out.println(""); 
 		switch (num) {
 		case 1 -> {
                     // invocamos al subProceso: Controlstock(Gastos,Ganancias)

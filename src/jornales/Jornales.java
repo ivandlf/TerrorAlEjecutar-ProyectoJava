@@ -1,8 +1,6 @@
 
 package jornales;
 
-
-import jornales.CalculoJornales;
 import java.util.Scanner;
 import static jornales.CalculoJornales.calculojornales;
 import static jornales.CalculoJornales.calculosalario;
@@ -18,7 +16,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
 		// Definimos banderas para avisarnos cuando las jornadas no hayan sido registradas
 		
 		// asignamos un valor a HorasT 
-		int horasT = 0;
+		horasT = 0;
 		do {
 			System.out.println("");
 			System.out.println(" --------------------------------------");
@@ -181,7 +179,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                         barman = entrada.nextLine();
                                         System.out.print("Digite salario por hora: ");
                                         salario = entrada.nextDouble();
-                                        System.out.println(""); // no hay forma directa de borrar la consola en Java
+                                        System.out.println(""); 
                                         // invocamos a el SubProceso:  CalculoJornales(HorasT)
                                         calculojornales(horasT,semana,horas);
                                         for (j=0;j<=4;j++) {
@@ -200,7 +198,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                         cajero = entrada.nextLine();
                                         System.out.print("Digite salario por hora: ");
                                         salario = entrada.nextDouble();
-                                        System.out.println(""); // no hay forma directa de borrar la consola en Java
+                                        System.out.println(""); 
                                         // invocamos a el SubProceso:  CalculoJornales(HorasT)
                                         calculojornales(horasT,semana,horas);
                                         for (j=0;j<=4;j++) {

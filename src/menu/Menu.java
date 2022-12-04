@@ -2,6 +2,8 @@
  
 package menu;
 
+import java.util.Scanner;
+
 public class Menu {
    
     public static void Menu(double valorM, double valorSNK, double valorP, double valorB, double[] precioP, double[] precioM, double[] precioB, String[] pizza, String[] bebida, String[] minuta, String[] snack, double[] precioSNK) {
@@ -24,11 +26,11 @@ public class Menu {
             System.out.println("|-------------------------------------|");
             System.out.println(" ");
             
-            num = Integer.parseInt(teclado.next()); // Se lee opciÃ³n ingresada por el usuario
+            num = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
             
             switch(num){
             
-                case 1:
+                case 1 -> {
                     System.out.println("********* MENU *************");
                     System.out.println("----------------------------");
                     System.out.println("PIZZAS");
@@ -36,10 +38,10 @@ public class Menu {
                     for (int i=0; i <= valorP;i++){
                         System.out.println(pizza[i] +" $ "+precioP[i]);
                     }
-
-                    System.out.println("----------------------------");  
                     
-                    System.out.println("MINUTAS");                    
+                    System.out.println("----------------------------");                    
+                    
+                    System.out.println("MINUTAS");
                     for (int i=0; i <= valorM;i++){
                         System.out.println(minuta[i] +" $ "+precioM[i]);
                     }                    
@@ -55,17 +57,16 @@ public class Menu {
                     System.out.println("SNACKS");                    
                     for (int i=0; i <= valorSNK;i++){
                         System.out.println(snack[i] +" $ "+precioSNK[i]);
-                    }  
-                    
-                    break;
+                    }
+            }
                 
-                case 2:
-                    // damos las diversas opciones de comidas a elegir
-                    // Luego se recorreran los arreglos y se seleccionara la opcion que se desea cambiar
-		                 // A continuacion sustituiremos el nombre de esta variable por la de la nueva opcion y haremos lo mismo con el precio
-		                 // Tambien daremos la opcion de aÃ±adir una nueva opcion ara ello aumentaremos el valor de la variable "valor" y su respectivo subindice
-		                 // para luego asignarle un nombre y un precio
-                    
+                case 2 -> {
+                    /* damos las diversas opciones de comidas a elegir
+                     Luego se recorreran los arreglos y se seleccionara la opcion que se desea cambiar
+                     A continuacion sustituiremos el nombre de esta variable por la de la nueva opcion y haremos lo mismo con el precio
+                     Tambien daremos la opcion de aÃ±adir una nueva opcion ara ello aumentaremos el valor de la variable "valor" y su respectivo subindice
+                    para luego asignarle un nombre y un precio
+                    */
                     do{
                         System.out.println(" ");
                         System.out.println("|-------------------------------------|");
@@ -85,14 +86,13 @@ public class Menu {
                         num = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                         
                         switch(num){
-                            case 1:
-                                
+                            case 1 -> {
                                 do{
                                     System.out.println("-------------------------------------");
                                     System.out.println("  Elija la opcion que desea cambiar  ");
                                     System.out.println("-------------------------------------");
                                     for(int i = 0; i <= valorP;i++){
-                                        System.out.println(i+"_ "+pizza[i]);                                    
+                                        System.out.println(i+"_ "+pizza[i]);
                                     }                                    
                                     System.out.println(Math. round(valorP+1)+"_ Añadir nueva opcion");
                                     System.out.println(Math. round(valorP+2)+"_ Volver");
@@ -107,46 +107,45 @@ public class Menu {
                                     }
                                     if(nuevaOpcion<=valorP){
                                         System.out.println("Escriba la nueva opción");
-                                        pizza[nuevaOpcion] = teclado.next(); // Se lee opciÃ³n ingresada por el usuario
+                                        pizza[nuevaOpcion] = teclado.next(); // Se lee opcion ingresada por el usuario
                                         System.out.println("Asignar un precio");
-                                        precioP[nuevaOpcion] = Double.parseDouble(teclado.next()); // Se lee opciÃ³n ingresada por el usuario
+                                        precioP[nuevaOpcion] = Double.parseDouble(teclado.next()); // Se lee opcion ingresada por el usuario
                                     }
-                                }while(nuevaOpcion != Math. round(valorP+2));                               
-                                break;
-                            case 2:
+                                }while(nuevaOpcion != Math. round(valorP+2));
+                            }
+                            case 2 -> {
                                 do{
                                     System.out.println("-------------------------------------");
                                     System.out.println("  Elija la opcion que desea cambiar  ");
                                     System.out.println("-------------------------------------");
                                     for(int i = 0; i <= valorM;i++){
-                                        System.out.println(i+"_ "+minuta[i]);                                    
+                                        System.out.println(i+"_ "+minuta[i]);
                                     }                                    
                                     System.out.println(Math. round(valorM+1)+"_ Añadir nueva opcion");
                                     System.out.println(Math. round(valorM+2)+"_ Volver");
                                     
                                     System.out.println("-------------------------------------");                                    
-                                    nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opciÃ³n ingresada por el usuario
+                                    nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                                     
                                     if(nuevaOpcion==Math. round(valorP+1)){
                                         valorM = valorM+1;
                                     }
                                     if(nuevaOpcion<=valorM){
                                         System.out.println("Escriba la nueva opcion");
-                                        minuta[nuevaOpcion] = teclado.next(); // Se lee opciÃ³n ingresada por el usuario
+                                        minuta[nuevaOpcion] = teclado.next(); // Se lee opcion ingresada por el usuario
                                         System.out.println("Asignar un precio");
                                         precioM[nuevaOpcion] = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                                     }
                                 }while(nuevaOpcion != Math. round(valorM+2));
+                            }
                                 
-                                break;
-                                
-                            case 3:
+                            case 3 -> {
                                 do{
                                     System.out.println("-------------------------------------");
                                     System.out.println("  Elija la opcion que desea cambiar  ");
                                     System.out.println("-------------------------------------");
                                     for(int i = 0; i <= valorB;i++){
-                                        System.out.println(i+"_ "+bebida[i]);                                    
+                                        System.out.println(i+"_ "+bebida[i]);
                                     }                                    
                                     System.out.println(Math. round(valorB+1)+"_ Añadir nueva opcion");
                                     System.out.println(Math. round(valorB+2)+"_ Volver");
@@ -159,21 +158,20 @@ public class Menu {
                                     }
                                     if(nuevaOpcion<=valorB){
                                         System.out.println("Escriba la nueva opcion");
-                                        bebida[nuevaOpcion] = teclado.next(); // Se lee opciÃ³n ingresada por el usuario
+                                        bebida[nuevaOpcion] = teclado.next(); // Se lee opcion ingresada por el usuario
                                         System.out.println("Asignar un precio");
-                                        precioB[nuevaOpcion] = Integer.parseInt(teclado.next()); // Se lee opciÃ³n ingresada por el usuario
+                                        precioB[nuevaOpcion] = Integer.parseInt(teclado.next()); // Se lee opcicion ingresada por el usuario
                                     }
                                 }while(nuevaOpcion != Math. round(valorB+2));
+                            }
                                 
-                                break;
-                                
-                            case 4:
+                            case 4 -> {
                                 do{
                                     System.out.println("-------------------------------------");
                                     System.out.println("  Elija la opcion que desea cambiar  ");
                                     System.out.println("-------------------------------------");
                                     for(int i = 0; i <= valorSNK;i++){
-                                        System.out.println(i+"_ "+snack[i]);                                    
+                                        System.out.println(i+"_ "+snack[i]);
                                     }                                    
                                     System.out.println(Math. round(valorSNK+1)+"_ Añadir Snack");
                                     System.out.println(Math. round(valorSNK+2)+"_ Volver");                                    
@@ -186,40 +184,38 @@ public class Menu {
                                     }
                                     if(nuevaOpcion<=valorSNK){
                                         System.out.println("Escriba la nueva opcion");
-                                        snack[nuevaOpcion] = teclado.next(); // Se lee opciÃ³n ingresada por el usuario
+                                        snack[nuevaOpcion] = teclado.next(); // Se lee opcion ingresada por el usuario
                                         System.out.println("Asignar un precio");
-                                        precioSNK[nuevaOpcion] = Integer.parseInt(teclado.next()); // Se lee opciÃ³n ingresada por el usuario
+                                        precioSNK[nuevaOpcion] = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                                     }
                                 }while(nuevaOpcion != Math. round(valorSNK+2));
-                                break;
+                            }
                             
-                            case 5:
-                                break;                            
-                            
-                            default:
+                            case 5 -> {
+                            }
+                                
+                            default -> {
                                 System.out.println(" ------------------------------------------------------------------------------------------ ");
                                 System.out.println("|La opcion que a ingresado no es correcta. Por favor dijite una que se encuentre en el menu|");
                                 System.out.println(" ------------------------------------------------------------------------------------------ ");
                                 System.out.println(" ");
                                 System.out.println(" ");
+                            }
                                
                         }
                         
                     }while(num!=5 );
-                        
-                break;
+            }
                     
-                case 3:
-                    System.out.println("Saliste");
-                break;
+                case 3 -> System.out.println("Saliste");
                 
-                default:
+                default -> {
                     System.out.println(" ------------------------------------------------------------------------------------------ ");
                     System.out.println("|La opcion que a ingresado no es correcta. Por favor dijite una que se encuentre en el menu|");
                     System.out.println(" ------------------------------------------------------------------------------------------ ");
                     System.out.println(" ");
-                    System.out.println(" ");                    
-                    break;
+                    System.out.println(" ");
+            }
                     
             }
         }while(num != 3 );      

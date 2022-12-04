@@ -7,7 +7,7 @@ public class CalculoJornales {
     // ----------------------------
 	// SUBPROCESO CALCULO JORNALES
 	// ----------------------------
-	// Subproceso para asignar horas a empleadosao
+	// Subproceso para asignar horas a empleados
 	public static void calculojornales(double horast, String semana[][], double horas[][]) {
             Scanner entrada = new Scanner(System.in);
 		int i;
@@ -21,7 +21,7 @@ public class CalculoJornales {
 			horas[0][j] = entrada.nextDouble();
 			// aca se van sumando el total de horas q trabajo en la semana 
 			horast = horast+horas[0][j];
-			System.out.println(""); // no hay forma directa de borrar la consola en Java
+			System.out.println(""); 
 		}
 		// recorremos la matriz
 		for (i=0;i<=1;i++) {
