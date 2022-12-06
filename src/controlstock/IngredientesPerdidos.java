@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class IngredientesPerdidos {
 
-    public static void IngredientesPerdidos(double SHamburguesa, double SQueso, double SPanL, double SPanH, double SHarina, double SMilanesa) {
+    public static void ingredientesPerdidos(double SHamburguesa, double SQueso, double SPanL, double SPanH, double SHarina, double SMilanesa) {
         // Este subproceso sirve para marcar aquellos ingredientes perdidos o echados a perder.
         Scanner teclado = new Scanner(System.in);
         float Perdida;
@@ -43,12 +43,12 @@ public class IngredientesPerdidos {
             case 1: 
                 System.out.println("Ingrese en KG la cantidad de queso perdido: ");
                 Perdida = Integer.parseInt(teclado.next());
-                SQueso = Squeso - Perdida;
+                SQueso = SQueso - Perdida;
                 break;
             case 2:
                 System.out.println("Ingrese la cantidad de panes de hamburgesa perdidos: ");
                 Perdida = Integer.parseInt(teclado.next());
-                SPanH = SpanH - Perdida;
+                SPanH = SPanH - Perdida;
                 break;
             case 3:
                 System.out.println("Ingrese la cantidad de panes de lomo perdidos: ");
@@ -80,7 +80,7 @@ public class IngredientesPerdidos {
                 System.out.println(" ");
                 System.out.println(" ");
                 break;
-        } 
-        while (7 == num);
+            } 
+        } while (7 == num);
     }
 }

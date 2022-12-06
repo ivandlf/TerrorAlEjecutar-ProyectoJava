@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class BebidasPerdidas {
 
-    public static void BebidasPerdidas(double[] Sbebida, double[] valorB, String[] bebida) {
+    public static void ebidasPerdidas(double[] Sbebida, double valorB, String[] bebida) {
         int i, opcion, aux;
-        Scanner teclado = new Scanner(System.in());
+        Scanner teclado = new Scanner(System.in);
         System.out.println("");
         // Mostramos todas las bebidas disponibles para que se elija la deseada
         System.out.println("------------------------------------");
         System.out.println("***** STOCK PERDIDO (Bebidas) *****");
         System.out.println("------------------------------------");
-        for (int i = 0; i <= valorB;i++){
+        for (i = 0; i <= valorB; i++){
             System.out.println("" + i + "_ " + bebida[i]);
         }
-        System.out.println(Math. round(valorB + 1) + "_Volver");
+        System.out.println(Math. round(valorB + 1) + "- Volver");
         System.out.println("------------------------------------");
         opcion = Integer.parseInt(teclado.nextLine());
         if (opcion == valorB) {

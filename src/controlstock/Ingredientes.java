@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Ingredientes {
 
-    public static void Ingredientes(double SPanH, double SPanL, double SQueso, double SHarina, double SHamburguesa, double SMilanesa, double Gastos) {
+    public static void ingredientes(double SPanH, double SPanL, double SQueso, double SHarina, double SHamburguesa, double SMilanesa, double Gastos) {
         Scanner teclado = new Scanner(System.in);
 
         float PQueso, packH, packL, PPanL, PPanH, PHarina, PHamburguesa, PMilanesa, Harina, PanL, PanH, Hamburguesa, Milanesa, Squeso, Queso, KgMilanesa;
@@ -46,7 +46,7 @@ public class Ingredientes {
                 case 2: // Opci�n 2
                     System.out.println("Ingresar la cantidad de packs de panes de hamburguesa que ingresan al stock: ");
                     packH = Integer.parseInt(teclado.next());
-                    System.out.println("Determinar el tama�o del pack de panes: ");
+                    System.out.println("Determinar el tamaño del pack de panes: ");
                     PanH = Integer.parseInt(teclado.next());
                     Gastos = Gastos + (packH * PPanH); // Se hace una suma iterativa de gastos, as� se van sumando todos los precios de los productos.
                     SPanH = SPanH + (packH * PanH); // Suma al stock el nuevo stock de dicho ingrediente.
@@ -55,7 +55,7 @@ public class Ingredientes {
                 case 3: // Opci�n 3
                     System.out.println("Ingresar la cantidad de packs de panes de lomos que ingresan a stock: ");
                     packL = Integer.parseInt(teclado.next());
-                    System.out.println("Determinar el tama�o del pack de panes: ");
+                    System.out.println("Determinar el tamaño del pack de panes: ");
                     PanL = Integer.parseInt(teclado.next());
                     System.out.println("Ingresar el precio de los packs: ");
                     PPanL = Integer.parseInt(teclado.next());
@@ -99,12 +99,12 @@ public class Ingredientes {
 
                 default:
                     System.out.println(" ------------------------------------------------------------------------------------------------ ");
-                    System.out.println(" | La opci�n que ha ingresado no es correcta. Por favor, digite una que se encuentre en el men� | ");
+                    System.out.println(" | La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú | ");
                     System.out.println(" ------------------------------------------------------------------------------------------------ ");
                     System.out.println(" ");
                     System.out.println(" ");
                     break;
             }
-        while (7 == num);
+        } while (7 == num);
     }
 }

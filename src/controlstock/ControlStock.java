@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ControlStock {
 
-    public static void controlStock(String[] bebida, double[] valorB, double[] Sbebida, double[] Ssnack, String[] Snack, double[] valorSNK, double[] gastos, double[] ganancias, double[] Shamburguesa, double[] Squeso, double[] SpanL, double[] SpanH, double[] Sharina, double[] Smilanesa) {
+    public static void controlStock(String[] bebida, double valorB, double Sbebida, double Ssnack, String[] Snack, double valorSNK, double[] gastos, double[] ganancias, double Shamburguesa, double Squeso, double SpanL, double SpanH, double Sharina, double Smilanesa) {
 
         Scanner teclado = new Scanner(System.in);
         int opcionBe, opcionSNK, opcion, i, opcionCMD;
@@ -35,13 +35,13 @@ public class ControlStock {
                         System.out.println(" -----------------------------------------");
                         System.out.println("|                                         |");
                         System.out.println("|-----------------------------------------|");
-                        System.out.println("|************** MENU BEBIDAS *************|");
+                        System.out.println("|************* MENU BEBIDAS **************|");
                         System.out.println("|-----------------------------------------|");
-                        System.out.println("|     1_ ver stock de Bebidas             |");
-                        System.out.println("|     2_ Ingresar stock                   |");
-                        System.out.println("|     3_ Stock Perdido                    |");
-                        System.out.println("|     4_ Volver                           |");
-                        System.out.println("|     5_ Salir                            |");
+                        System.out.println("|     1 - Ver stock de Bebidas            |");
+                        System.out.println("|     2 - Ingresar stock                  |");
+                        System.out.println("|     3 - Stock Perdido                   |");
+                        System.out.println("|     4 - Volver                          |");
+                        System.out.println("|     5 - Salir                           |");
                         System.out.println("|                                         |");
                         System.out.println(" ----------------------------------------- ");
                         System.out.println("");
@@ -49,7 +49,7 @@ public class ControlStock {
                         System.out.println("*** Avisos *** ");
                         System.out.println("--------------------------");
 
-                        for (int i = 0; i <= valorB; i++) {
+                        for (i = 0; i <= valorB; i++) {
                             System.out.println(i + "Bajo stock de" + bebida[i]);
                         }
                         System.out.println("--------------------------");
@@ -72,13 +72,16 @@ public class ControlStock {
                                 break;
                             default:
                                 System.out.println("------------------------------------------------------------------------------------------");
-                                System.out.println("|La opcion que a ingresado no es correcta. Por favor dijite una que se encuentre en el menu|");
+                                System.out.println("| La opción que ha ingresado no es correcta. Por favor digite una que se encuentre en el menú. |");
                                 System.out.println("------------------------------------------------------------------------------------------");
                                 System.out.println("");
                                 System.out.println("");
+                             break;
                         }
-                    }while(opcion =! 5);
+                    } while(opcion != 5);
+
                     break;
+
                 case 2: // Opcion 2 se muestra toda la informacion sobre comidas(Harina, panes, hamburguesas, milanesas, queso, etc)
                     do {
                         System.out.println("");
@@ -87,15 +90,16 @@ public class ControlStock {
                         System.out.println("|-----------------------------------------|");
                         System.out.println("|************* INGREDIENTES **************|");
                         System.out.println("|                                         |");
-                        System.out.println("|            1_ Ver stock                 |");
-                        System.out.println("|            2_Ingresar Stock             |");
-                        System.out.println("|            3_Stock perdido              |");
-                        System.out.println("|            4_Volver                     |");
-                        System.out.println("|            5_Salir                      |");
+                        System.out.println("|            1 - Ver stock                |");
+                        System.out.println("|            2 - Ingresar Stock           |");
+                        System.out.println("|            3 - Stock perdido            |");
+                        System.out.println("|            4 - Volver                   |");
+                        System.out.println("|            5 - Salir                    |");
                         System.out.println("|                                         |");
                         System.out.println(" -----------------------------------------");
                         System.out.println("***Avisos***");
-                        System.out.println("-----------------------------------------");
+                        System.out.println("------------------------------------------");
+                        
                         if (SpanL <= 10) {//Aviso de que hay que pedir más mercaderia
                             System.out.println("Hay mucha cantidad de packs de panes de lomos. No pedir más de momento");
                         } else {
@@ -156,10 +160,11 @@ public class ControlStock {
 
                             default:
                                 System.out.println(" ------------------------------------------------------------------------------------------ ");
-                                System.out.println("|La opcion que a ingresado no es correcta. Por favor dijite una que se encuentre en el menu|");
+                                System.out.println("| La opción que ha ingresado no es correcta. Por favor digite una que se encuentre en el menú |");
                                 System.out.println(" ------------------------------------------------------------------------------------------ ");
                         }
-                    } while (opcion =! 5);
+                    } while (opcion != 5);
+
                 case 3:
                     do {
                         System.out.println("");
@@ -168,19 +173,21 @@ public class ControlStock {
                         System.out.println("|-----------------------------------------|");
                         System.out.println("|***************  SNACKS *****************|");
                         System.out.println("|                                         |");
-                        System.out.println("|           1_ Ver stock                  |");
-                        System.out.println("|           2_ Ingresar stock             |");
-                        System.out.println("|           3_ Stock perdido              |");
-                        System.out.println("|           4_ Volver                     |");
-                        System.out.println("|           5_ Salir                      |");
+                        System.out.println("|           1 - Ver stock                 |");
+                        System.out.println("|           2 - Ingresar stock            |");
+                        System.out.println("|           3 - Stock perdido             |");
+                        System.out.println("|           4 - Volver                    |");
+                        System.out.println("|           5 - Salir                     |");
                         System.out.println(" -----------------------------------------");
                         System.out.println(" ***Avisos***");
                         System.out.println("-------------------------");
-                        for (int i = 0; i <= valorSNK; i++) {
+                        for (i = 0; i <= valorSNK; i++) {
                             System.out.println(i + "Bajo stock de " + Snack[i]);
                         }
+                        
                         System.out.println("-------------------------");
                         opcionSNK = Integer.parseInt(teclado.nextLine());
+                        
                         switch (opcionSNK) {
                             case 1:
                                 MenuSnack(Ssnack, valorSNK, Snack);
@@ -194,11 +201,14 @@ public class ControlStock {
 
                             default:
                                 System.out.println("------------------------------------------------------------------------------------------");
-                                System.out.println("|La opcion que a ingresado no es correcta. Por favor dijite una que se encuentre en el menu|");
+                                System.out.println("| La opción que a ingresado no es correcta. Por favor digite una que se encuentre en el menú |");
                                 System.out.println("------------------------------------------------------------------------------------------");
                                 System.out.println("");
                                 System.out.println("");
+                                break;
                         }
-                    } while (opcion =! 5);
+                    } while (opcion != 5);
             }
-        } while (opcion =! 4);
+        } while (opcion != 4);
+    }
+}

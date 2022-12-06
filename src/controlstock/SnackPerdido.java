@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class SnackPerdido {
     
-    public static void MenuSnack(double Ssnack, double valorSNK, double Snack) {
+    public static void MenuSnack(double[] Ssnack, double valorSNK, double[] Snack) {
         Scanner teclado = new Scanner(System.in);
         int i, Opcion, aux;
         
@@ -21,7 +21,7 @@ public class SnackPerdido {
             System.out.println("   ", i, "- ", Snack[i]);
         }
         
-        System.out.println(valorSNK + 1, "- Volver");
+        System.out.println(Math.round(valorSNK + 1), "- Volver");
         System.out.println("------------------------------------");
         Opcion = Integer.parseInt(teclado.next()); // Lee la opción ingresada por el usuario.
         // Borrar pantalla.
