@@ -11,9 +11,9 @@ public class MenuSnack {
     public static void MenuSnack(double Ssnack, double valorSNK, double Snack) {
         Scanner teclado = new Scanner(System.in);
         int i;
-        // Mostramos todo el menú de snacks y la cantidad de stock disponible.
+        // Mostramos todo el menÃº de snacks y la cantidad de stock disponible.
         System.out.println("---------------------------------------");        
-        for (i = 0; i = valorSNK; ){
+        for (i = 0; i <= valorSNK; i++){
             System.out.println("El stock de ", Snack[i], "es de: ", Ssnack[i], " KG.");
             System.out.println("---------------------------------------");
         }

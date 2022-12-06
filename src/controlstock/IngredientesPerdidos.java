@@ -34,12 +34,12 @@ public class IngredientesPerdidos {
         System.out.println("|                                         |");
         System.out.println("------------------------------------------");
             
-        num = Integer.parseInt(teclado.next()); // Lee la opción ingresada por el usuario.
+        num = Integer.parseInt(teclado.next()); // Lee la opciï¿½n ingresada por el usuario.
         
         System.out.println(" ");
         
         switch (num) {
-            // En cada una de las opciones se pedirá cuánto se ha perdido y se restará con el stock existente.
+            // En cada una de las opciones se pedirï¿½ cuï¿½nto se ha perdido y se restarï¿½ con el stock existente.
             case 1: 
                 System.out.println("Ingrese en KG la cantidad de queso perdido: ");
                 Perdida = Integer.parseInt(teclado.next());
@@ -75,7 +75,7 @@ public class IngredientesPerdidos {
                 
             default:
                 System.out.println(" ------------------------------------------------------------------------------------------------ ");
-                System.out.println(" | La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú | ");
+                System.out.println(" | La opciÃ³n que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menÃº | ");
                 System.out.println(" ------------------------------------------------------------------------------------------------ ");
                 System.out.println(" ");
                 System.out.println(" ");
