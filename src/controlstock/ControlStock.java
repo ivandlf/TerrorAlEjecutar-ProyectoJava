@@ -1,4 +1,4 @@
-package controlStock;
+package controlstock;
 
 import java.util.Scanner;
 
