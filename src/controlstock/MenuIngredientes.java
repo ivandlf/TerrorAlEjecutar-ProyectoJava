@@ -2,10 +2,10 @@ package controlstock;
 
 public class MenuIngredientes {
 
-    public static void MenuIngredientes(double SPanH, double SQueso, double SHarina, double SpanL, double SHamburguesa, double SMilanesa) {
+    public static void menuIngredientes(double SPanH, double SQueso, double SHarina, double SpanL, double SHamburguesa, double SMilanesa) {
 
 // ----------------------------
-// SUBPROCESO MENÚ INGREDIENTES        
+// SUBPROCESO MENï¿½ INGREDIENTES        
 // ----------------------------
         System.out.println("*********** STOCK *************");
         System.out.println("-------------------------------");

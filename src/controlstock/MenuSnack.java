@@ -6,7 +6,7 @@ package controlstock;
 
 public class MenuSnack {
 
-    public static void menusnack(double[] Ssnack, double valorSNK, double[] Snack) {
+    public static void menuSnack(double[] Ssnack, double valorSNK, double[] Snack) {
         int i;
         // Mostramos todo el menú de snacks y la cantidad de stock disponible.
         System.out.println("---------------------------------------");        

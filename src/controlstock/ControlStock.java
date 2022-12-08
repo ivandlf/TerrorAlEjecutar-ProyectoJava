@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ControlStock {
 
-    public static void controlstock(String[] bebida, double valorB, double[] Sbebida, double[] Ssnack, String[] snack, double valorSNK, double[] gastos, double[] ganancias, double Shamburguesa, double Squeso, double SpanL, double SpanH, double Sharina, double Smilanesa) {
+    public static void controlStock(String[] bebida, double valorB, double[] Sbebida, double[] Ssnack, String[] snack, double valorSNK, double gastos, double ganancias, double Shamburguesa, double Squeso, double SpanL, double SpanH, double Sharina, double Smilanesa) {
 
         Scanner teclado = new Scanner(System.in);
         int opcionBe, opcionSNK, opcion, i, opcionCMD;
@@ -17,10 +17,10 @@ public class ControlStock {
             System.out.println("|************** MENÚ STOCK ***************|");
             System.out.println("|-----------------------------------------|");
             System.out.println("|                                         |");
-            System.out.println("|         *Opcion 1: Bebidas              |");
-            System.out.println("|         *Opcion 2: Comidas              |");
-            System.out.println("|         *Opcion 3: Snacks               |");
-            System.out.println("|         *Opcion 4: Salir                |");
+            System.out.println("|         * Opción 1: Bebidas             |");
+            System.out.println("|         * Opción 2: Comidas             |");
+            System.out.println("|         * Opción 3: Snacks              |");
+            System.out.println("|         * Opción 4: Salir               |");
             System.out.println("|                                         |");
             System.out.println(" -----------------------------------------");
             System.out.println("");
@@ -182,7 +182,7 @@ public class ControlStock {
                         System.out.println(" ***Avisos***");
                         System.out.println("-------------------------");
                         for (i = 0; i <= valorSNK; i++) {
-                            System.out.println(i + "Bajo stock de " + Snack[i]);
+                            System.out.println(i + "Bajo stock de " + snack[i]);
                         }
                         
                         System.out.println("-------------------------");
@@ -190,12 +190,12 @@ public class ControlStock {
                         
                         switch (opcionSNK) {
                             case 1:
-                                MenuSnack(Ssnack, valorSNK, Snack);
+                                MenuSnack(Ssnack, valorSNK, snack);
                                 break;
                             case 2:
-                                EntradaSnack(Ssnack, valorSNK, Snack, gastos);
+                                EntradaSnack(Ssnack, valorSNK, snack, gastos);
                             case 3:
-                                SnackPerdido(Ssnack, valorSNK, Snack);
+                                SnackPerdido(Ssnack, valorSNK, snack);
                             case 4:
                                 break;
 

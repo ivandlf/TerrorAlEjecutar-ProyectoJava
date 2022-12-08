@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class SnackPerdido {
     
-    public static void MenuSnack(double[] Ssnack, double valorSNK, double[] Snack) {
+    public static void menuSnack(double[] Ssnack, double valorSNK, double[] Snack) {
         Scanner teclado = new Scanner(System.in);
         int i, Opcion, aux;
         
