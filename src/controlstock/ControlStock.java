@@ -58,26 +58,20 @@ public class ControlStock {
 
                         opcionBe = Integer.parseInt(teclado.next()); //se lee la opcion ingresada por el usuario
                         switch (opcionBe) {
-                            case 1:
-                                MenuBebidas(bebida, valorB, Sbebida);
-                                break;
-                            case 2:
-                                EntradaBebidas(Sbebida, valorB, bebida, gastos);
-                                break;
-                            case 3:
-                                BebidasPerdidas(Sbebida, valorB, bebida);
-                                break;
-                            case 4:
-                                break;
-                            case 5:
-                                break;
-                            default:
+                            case 1 -> MenuBebidas.menuBebidas(bebida, valorB, Sbebida);
+                            case 2 -> EntradaBebidas.entradaBebidas(Sbebida, valorB, bebida, gastos);
+                            case 3 -> BebidasPerdidas.bebidasPerdidas(Sbebida, valorB, bebida);
+                            case 4 -> {
+                    }
+                            case 5 -> {
+                    }
+                            default -> {
                                 System.out.println("------------------------------------------------------------------------------------------------");
                                 System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
                                 System.out.println("------------------------------------------------------------------------------------------------");
                                 System.out.println("");
                                 System.out.println("");
-                             break;
+                    }
                         }
                     } while(opcion != 5);
 
@@ -148,13 +142,13 @@ public class ControlStock {
                         opcionCMD = Integer.parseInt(teclado.nextLine());//Se lee la opcion ingresada por el usuario
                         switch (opcionCMD) {
                             case 1:
-                                MenuIngredientes(SpanH, Squeso, Sharina, SpanL, Shamburguesa, Smilanesa);
+                                MenuIngredientes.menuIngredientes(SpanH, Squeso, Sharina, SpanL, Shamburguesa, Smilanesa);
                                 break;
                             case 2:
-                                Ingredientes(SpanH, SpanL, Squeso, Sharina, Shamburguesa, Smilanesa, gastos);
+                                Ingredientes.ingredientes(SpanH, SpanL, Squeso, Sharina, Shamburguesa, Smilanesa, gastos);
                                 break;
                             case 3:
-                                IngredientesPerdidos(Shamburguesa, Squeso, SpanL, SpanH, Sharina, Smilanesa);
+                                IngredientesPerdidos.ingredientesPerdidos(Shamburguesa, Squeso, SpanL, SpanH, Sharina, Smilanesa);
                                 break;
                             case 4:
                                 break;
@@ -191,12 +185,12 @@ public class ControlStock {
                         
                         switch (opcionSNK) {
                             case 1:
-                                MenuSnack(Ssnack, valorSNK, snack);
+                                MenuSnack.menuSnack(Ssnack, valorSNK, snack);
                                 break;
                             case 2:
-                                EntradaSnack(Ssnack, valorSNK, snack, gastos);
+                                EntradaSnack.entradaSnack(Ssnack, valorSNK, snack, gastos);
                             case 3:
-                                SnackPerdido(Ssnack, valorSNK, snack);
+                                SnackPerdido.menuSnack(Ssnack, valorSNK, snack);
                             case 4:
                                 break;
 
