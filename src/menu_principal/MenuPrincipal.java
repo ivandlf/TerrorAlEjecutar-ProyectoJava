@@ -57,7 +57,7 @@ public class MenuPrincipal {
 	semana[0][3] = "Jueves ";
         semana[0][4] = "Viernes";
         // Asignamos los titulares de la lista comandas en la matriz
-        listacomanda[0][0] = "N�";
+        listacomanda[0][0] = "N�";
         listacomanda[0][1] = "Comensales";
         listacomanda[0][2] = "Pizzas";
         listacomanda[0][3] = "Minutas";
@@ -79,7 +79,7 @@ public class MenuPrincipal {
         SpanH = 10;
 	Smilanesa = 10;
         Sharina = 5;
-	bebidas = 111110;
+	bebidas = 0;
         Ssnack[0] = 0;
 	Ssnack[1] = 0;
         Ssnack[2] = 0;
@@ -123,12 +123,12 @@ public class MenuPrincipal {
 		System.out.println("|                                        |");
                 System.out.println("|       Elija que desea supervisar:      |");
 		System.out.println("|                                        |");
-		System.out.println("|    * Opción 1: Control Stock           |");
-                System.out.println("|    * Opción 2: Jornales                |");
-		System.out.println("|    * Opción 3: Menú                    |");
-		System.out.println("|    * Opción 4: Comandas                |");
-                System.out.println("|    * Opción 5: Costos y ganacias       |");
-		System.out.println("|    * Opción 6: Salir                   |");
+		System.out.println("|    * Opcion 1: Control Stock           |");
+                System.out.println("|    * Opcion 2: Jornales                |");
+		System.out.println("|    * Opcion 3: Menu                   |");
+		System.out.println("|    * Opcion 4: Comandas                |");
+                System.out.println("|    * Opcion 5: Costos y ganacias       |");
+		System.out.println("|    * Opcion 6: Salir                   |");
 		System.out.println(" -----------------------------------------");
                 System.out.println("");
 		// Se lee opcion ingresada por el usuario
@@ -160,9 +160,9 @@ public class MenuPrincipal {
                 }
 		default -> {
                     // Se muestra en pantalla un mensaje en caso de que la opcion ingresada no exista
-                    System.out.println(" ------------------------------------------------------------------------------------------ ");
-                    System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
-                    System.out.println(" ------------------------------------------------------------------------------------------ ");
+                    System.out.println(" ----------------------------------------------------------------------------------------------");
+                    System.out.println("| La opcion que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menu. |");
+                    System.out.println(" ---------------------------------------------------------------------------------------------- ");
                     System.out.println("");
                     System.out.println("");
                 }

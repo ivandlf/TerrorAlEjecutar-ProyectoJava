@@ -94,19 +94,17 @@ public class Menu {
                                     for(int i = 0; i <= valorP;i++){
                                         System.out.println(i+"_ "+pizza[i]);
                                     }                                    
-                                    System.out.println(Math. round(valorP+1)+"_ AÃ±adir nueva opcion");
+                                    System.out.println(Math. round(valorP+1)+"_ Añadir nueva opcion");
                                     System.out.println(Math. round(valorP+2)+"_ Volver");
                                     
                                     System.out.println("-------------------------------------");
-                                    nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
-                                    
-                                    System.out.println("valorP = "+ Math. round(valorP+1));
+                                    nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario                                  
                                     
                                     if(nuevaOpcion==Math. round(valorP+1)){
                                         valorP = Math. round(valorP+1);                                        
                                     }
                                     if(nuevaOpcion<=valorP){
-                                        System.out.println("Escriba la nueva opciÃ³n");
+                                        System.out.println("Escriba la nueva opcion");
                                         pizza[nuevaOpcion] = teclado.next(); // Se lee opcion ingresada por el usuario
                                         System.out.println("Asignar un precio");
                                         precioP[nuevaOpcion] = Double.parseDouble(teclado.next()); // Se lee opcion ingresada por el usuario
@@ -121,13 +119,13 @@ public class Menu {
                                     for(int i = 0; i <= valorM;i++){
                                         System.out.println(i+"_ "+minuta[i]);
                                     }                                    
-                                    System.out.println(Math. round(valorM+1)+"_ AÃ±adir nueva opcion");
+                                    System.out.println(Math. round(valorM+1)+"_ Añadir nueva opcion");
                                     System.out.println(Math. round(valorM+2)+"_ Volver");
                                     
                                     System.out.println("-------------------------------------");                                    
                                     nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                                     
-                                    if(nuevaOpcion==Math. round(valorP+1)){
+                                    if(nuevaOpcion==Math. round(valorM+1)){
                                         valorM = valorM+1;
                                     }
                                     if(nuevaOpcion<=valorM){

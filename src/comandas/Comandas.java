@@ -219,7 +219,8 @@ public class Comandas {
                                             }
                                             break;
 
-                                            
+                                        case 4:
+                                            break;
                                         
                                         default:
                                             System.out.println(" ------------------------------------------------------------------------------------------ ");
