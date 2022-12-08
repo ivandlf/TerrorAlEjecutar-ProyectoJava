@@ -53,7 +53,7 @@ public class MenuPrincipal {
 	// Asignamos los dias de la semana a su respectiva matriz
         semana[0][0] = "Lunes ";
 	semana[0][1] = "Martes ";
-        semana[0][2] = "miercoles ";
+        semana[0][2] = "Miercoles ";
 	semana[0][3] = "Jueves ";
         semana[0][4] = "Viernes";
         // Asignamos los titulares de la lista comandas en la matriz

@@ -11,7 +11,7 @@ public class MenuBebidas {
         System.out.println("");
         System.out.println("-----------------------------------");
         for (i = 0; i <= valorB; i++) {
-            System.out.println(i + "El stock" + bebida[i], "es de: " + Sbebida[i]); // Recorremos todas las bebidas, para mostrar todos los lugares a los que se les a asignado una bebida.
+            System.out.printf(i + "El stock" + bebida[i], "es de: " + Sbebida[i]); // Recorremos todas las bebidas, para mostrar todos los lugares a los que se les a asignado una bebida.
             System.out.println("-----------------------------------");
         }   
     }    

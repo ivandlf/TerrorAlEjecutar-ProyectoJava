@@ -11,7 +11,7 @@ public class MenuSnack {
         // Mostramos todo el menú de snacks y la cantidad de stock disponible.
         System.out.println("---------------------------------------");        
         for (i = 0; i <= valorSNK; i++){
-            System.out.println("El stock de ", Snack[i], "es de: ", Ssnack[i], " KG.");
+            System.out.printf("El stock de ", Snack[i], "es de: ", Ssnack[i], " KG.");
             System.out.println("---------------------------------------");
         }
         

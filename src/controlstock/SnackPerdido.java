@@ -18,10 +18,10 @@ public class SnackPerdido {
         System.out.println("------------------------------------");
         
         for(i = 0; i <= valorSNK; i++){
-            System.out.println("   ", i, "- ", Snack[i]);
+            System.out.printf("   ", i, "- ", Snack[i]);
         }
         
-        System.out.println(Math.round(valorSNK + 1), "- Volver");
+        System.out.printf(Math.round(valorSNK + 1) + "- Volver");
         System.out.println("------------------------------------");
         Opcion = Integer.parseInt(teclado.next()); // Lee la opción ingresada por el usuario.
         // Borrar pantalla.

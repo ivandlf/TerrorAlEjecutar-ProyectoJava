@@ -7,8 +7,10 @@ import java.util.Scanner;
 //--------------------------
 
 public class EntradaSnack {
-    public static void entradaSnack(double[] Ssnack, double valorSNK, double[] Snack, double Gastos){
+    public static void entradaSnack(double[] Ssnack, double valorSNK, String[] snack, double gastos){
+        
         Scanner teclado = new Scanner(System.in);
+        
         int i, Opcion, aux, precio;
         // Mostramos todas las opciones de snacks disponibles.
         System.out.println("------------------------------------");
@@ -16,9 +18,9 @@ public class EntradaSnack {
         System.out.println("------------------------------------");
         
         for (i = 0; i <= valorSNK; i++){
-        System.out.println("   ", i, Snack[i]);
+        System.out.printf("   ", i, snack[i]);
         }
-        System.out.println(Math.round(valorSNK + 1), "- Volver");
+        System.out.printf(Math.round(valorSNK + 1) + "- Volver");
         System.out.println("------------------------------------");
         
         Opcion = Integer.parseInt(teclado.next()); // Lee la opci�n ingresada por el usuario.
@@ -30,7 +32,7 @@ public class EntradaSnack {
             Ssnack[Opcion] = Ssnack[Opcion] + aux; // Ingresamos la cantidad de snacks comprados y la a�adimos al stock.
             System.out.println("Ingrese el precio por KG.");
             precio = Integer.parseInt(teclado.next());
-            Gastos = Gastos + (precio * aux); // Sumamos el valor de la compra a gastos.
+            gastos = gastos + (precio * aux); // Sumamos el valor de la compra a gastos.
             System.out.println("");
         }
     }
