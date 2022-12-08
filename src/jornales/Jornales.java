@@ -66,7 +66,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                                     if (i==0) {
                                                         System.out.print("| "+semana[0][j]+"| ");
                                                     } else {
-                                                        System.out.print("   "+horasC[0][j]+"       ");
+                                                        System.out.print("   "+horasC[0][j]+"      ");
                                                     }
                                                 }
                                                 System.out.println(" ");
@@ -87,7 +87,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                                     if (i==0) {
                                                         System.out.print("|"+semana[0][j]+"| ");
                                                     } else {
-                                                        System.out.print("   "+horasB[0][j]+"       ");
+                                                        System.out.print("   "+horasB[0][j]+"      ");
                                                     }
                                                 }
                                                 System.out.println(" ");
@@ -108,7 +108,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                                     if (i==0) {
                                                         System.out.print("|"+semana[0][j]+"| ");
                                                     } else {
-                                                        System.out.print("   "+horasCA[0][j]+"       ");
+                                                        System.out.print("   "+horasCA[0][j]+"     ");
                                                     }
                                                 }
                                                 System.out.println(" ");
@@ -156,9 +156,9 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                         // Las cuales estan explicadas en su subpreceso, mostramos su jornada semanal, y calculamos su salario de la semana
                                         // A travez de una Funcion sencilla, agregamos el sueldo a gastos, y mostramos su pago al gerente, y le asignamos a bandera que ya esta lista para ver su joranada en su seccion
                                         System.out.println(" ");
-                                        System.out.print("Digite el nombre del empleado: ");
-                                        cocinero = entrada.nextLine();
-                                        System.out.print("Definir salario por hora: ");
+                                        System.out.println("Digite el nombre del empleado: ");
+                                        cocinero = entrada.next();
+                                        System.out.println("Definir salario por hora: ");
                                         salario = entrada.nextInt();
                                         System.out.println("");
                                         // invocamos a el SubProceso:  CalculoJornales(HorasT)
@@ -176,7 +176,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                     case 2 -> {
                                         System.out.println(" ");
                                         System.out.print("Digite el nombre del empleado: ");
-                                        barman = entrada.nextLine();
+                                        barman = entrada.next();
                                         System.out.print("Digite salario por hora: ");
                                         salario = entrada.nextDouble();
                                         System.out.println(""); 
@@ -195,7 +195,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                     case 3 -> {
                                         System.out.println(" ");
                                         System.out.print("Digite el nombre del empleado: ");
-                                        cajero = entrada.nextLine();
+                                        cajero = entrada.next();
                                         System.out.print("Digite salario por hora: ");
                                         salario = entrada.nextDouble();
                                         System.out.println(""); 

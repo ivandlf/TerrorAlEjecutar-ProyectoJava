@@ -17,7 +17,7 @@ public class CalculoJornales {
 		horast = 0;
 		// esto recorrer los 5 dias y va poniendo las horas que trabajo 
 		for (j=0;j<=4;j++) {
-			System.out.print("Definir las horas del dia "+j+1+"? De la semana");
+			System.out.print("Definir las horas del dia "+(j+1)+" De la semana: ");
 			horas[0][j] = entrada.nextDouble();
 			// aca se van sumando el total de horas q trabajo en la semana 
 			horast = horast+horas[0][j];
@@ -37,7 +37,7 @@ public class CalculoJornales {
 			System.out.println(" ");
 		}
 		// se muestra el total de horas de la semana 
-		System.out.println("La cantidad de horas semanales de este empleado son:"+horast);
+		System.out.println("La cantidad de horas semanales de este empleado son: "+horast);
 	}
 
 	public static double calculosalario(double horast, double salario) {
