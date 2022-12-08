@@ -12,7 +12,7 @@ public class Ingredientes {
         
         Scanner teclado = new Scanner(System.in);
 
-        float Pqueso, packH, packL, PpanL, PpanH, Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
+        float Pqueso, packH, packL, PpanL, PpanH = 0, Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
 
         int num;
 

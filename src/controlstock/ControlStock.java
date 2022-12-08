@@ -7,6 +7,7 @@ public class ControlStock {
     public static void controlStock(String[] bebida, double valorB, double[] Sbebida, double[] Ssnack, String[] snack, double valorSNK, double gastos, double ganancias, double Shamburguesa, double Squeso, double SpanL, double SpanH, double Sharina, double Smilanesa) {
 
         Scanner teclado = new Scanner(System.in);
+        
         int opcionBe, opcionSNK, opcion, i, opcionCMD;
 
         do {
@@ -71,9 +72,9 @@ public class ControlStock {
                             case 5:
                                 break;
                             default:
-                                System.out.println("------------------------------------------------------------------------------------------");
-                                System.out.println("| La opción que ha ingresado no es correcta. Por favor digite una que se encuentre en el menú. |");
-                                System.out.println("------------------------------------------------------------------------------------------");
+                                System.out.println("------------------------------------------------------------------------------------------------");
+                                System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
+                                System.out.println("------------------------------------------------------------------------------------------------");
                                 System.out.println("");
                                 System.out.println("");
                              break;
@@ -159,9 +160,9 @@ public class ControlStock {
                                 break;
 
                             default:
-                                System.out.println(" ------------------------------------------------------------------------------------------ ");
-                                System.out.println("| La opción que ha ingresado no es correcta. Por favor digite una que se encuentre en el menú |");
-                                System.out.println(" ------------------------------------------------------------------------------------------ ");
+                                System.out.println(" -----------------------------------------------------------------------------------------------");
+                                System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
+                                System.out.println(" -----------------------------------------------------------------------------------------------");
                         }
                     } while (opcion != 5);
 
@@ -200,9 +201,9 @@ public class ControlStock {
                                 break;
 
                             default:
-                                System.out.println("------------------------------------------------------------------------------------------");
-                                System.out.println("| La opción que a ingresado no es correcta. Por favor digite una que se encuentre en el menú |");
-                                System.out.println("------------------------------------------------------------------------------------------");
+                                System.out.println("-------------------------------------------------------------------------------------------------");
+                                System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
+                                System.out.println("-------------------------------------------------------------------------------------------------");
                                 System.out.println("");
                                 System.out.println("");
                                 break;
