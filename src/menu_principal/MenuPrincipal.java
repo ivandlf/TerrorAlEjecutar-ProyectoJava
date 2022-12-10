@@ -12,12 +12,11 @@ public class MenuPrincipal {
         String banderaB[] = new String[1];
         String banderaCa[] = new String[1];
         String banderaCo[] = new String[1];
-        String bebida[] = new String[1];
         String barman [] = new String[1];
         double bebidas;
 	String cajero[] = new String[1];
         String cocinero[] = new String[1];
-	double ganancias[] = new ganancias[1] ;
+	double ganancias[] = new double[1] ;
         Double gastos[] = new double[1];
         Double horasT[] = new double[1];
 	String minuta[] = new String[1];
