@@ -77,8 +77,8 @@ public class MenuPrincipal {
         valorM = 2;
 	bandera[0] = "";
         ordenes = 0;
-	gastos = 0;
-        ganancias = 0;
+	gastos[0] = 0;
+        ganancias[0] = 0;
 	Shamburguesa = 10;
         Squeso = 5;
 	SpanL = 10;
