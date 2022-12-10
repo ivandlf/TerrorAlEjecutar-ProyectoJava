@@ -3,7 +3,7 @@ package costosyganancias;
 
 public class CostosyGanancias {
   
-    public static void CostosyGanancias(double ganancias, double gastos) {
+    public static void CostosyGanancias(double ganancias[], double gastos[]) {
 	double total = 0.0;
 	// Aqui simplemente mostramos los gastos y ganancias registrados en el resto del programa, y mostramos la ganancia neta, restandole el total de los gastos menos el total de las ganancias
 	System.out.println("-------------------------------------");

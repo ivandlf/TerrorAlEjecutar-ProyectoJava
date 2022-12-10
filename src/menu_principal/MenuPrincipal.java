@@ -8,22 +8,28 @@ import java.util.Scanner;
 public class MenuPrincipal {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        String bandera[], banderaB[], banderaCa[], banderaCo[], bebida[];
-        String barman [];
+        String bandera[] = new String[1];
+        String banderaB[] = new String[1];
+        String banderaCa[] = new String[1];
+        String banderaCo[] = new String[1];
+        String bebida[] = new String[1];
+        String barman [] = new String[1];
         double bebidas;
-	String cajero[];
-        String cocinero[];
-	double ganancias, gastos, horasT[];
-	String minuta[];
+	String cajero[] = new String[1];
+        String cocinero[] = new String[1];
+	double ganancias[] = new ganancias[1] ;
+        Double gastos[] = new Double[1];
+        Double horasT[] = new Double[1];
+	String minuta[] = new String[1];
         int num;
 	int ordenes;
         int ordenessumatoria;
-	double pagoB[];
-        double pagoC[];
-	double pagoCA[];
-	double salario[];
+	double pagoB[] = new Double[1];
+        double pagoC[] = new Double[1];
+	double pagoCA[] = new Double[1];
+	double salario[] = new Double[1];
         double Shamburguesa, Sharina, Smilanesa;
-	String snack[];
+
         double SpanH, SpanL, Squeso;
         int valorB, valorM, valorP, valorSNK;
         // A continuacion Definimos todas las variables necesarias para definir las jornadas laborales
@@ -33,14 +39,14 @@ public class MenuPrincipal {
         double horasC [][] = new double[1][5];
 	double horasB [][] = new double[1][5];
         double horasCA [][] = new double[1][5];
-	String[][] listacomanda;
+	String[][] listacomanda = new String[999][999];
         listacomanda = new String[50][6];
-        bebida = new String[999];
+        String bebida = new String[999];
 	double precioB[] = new double[999];
         double Sbebida [] = new double[999];
 	String pizza [] = new String[999];
         double precioP[] = new double[999];
-	snack = new String[999];
+	String snack = new String[999];
         double precioSNK [] = new double[999];
 	double Ssnack [] = new double[999];
         minuta = new String[999];
@@ -69,7 +75,7 @@ public class MenuPrincipal {
         valorP = 2;
 	valorSNK = 2;
         valorM = 2;
-	bandera = "";
+	bandera[0] = "";
         ordenes = 0;
 	gastos = 0;
         ganancias = 0;

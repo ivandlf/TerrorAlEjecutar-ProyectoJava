@@ -16,7 +16,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
 		// Definimos banderas para avisarnos cuando las jornadas no hayan sido registradas
 		
 		// asignamos un valor a HorasT 
-		horasT = 0;
+		horasT[0] = 0;
 		do {
 			System.out.println("");
 			System.out.println(" --------------------------------------");
@@ -168,7 +168,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                         }
                                         // se le asigna la suma de  las horas semanales
                                         pagoC[0] = calculosalario(horasT,salario);
-                                        gastos += pagoC[0];
+                                        gastos[0] += pagoC[0];
                                         banderaCo[0] = "v";
                                         // mostramos el total del pago semanal
                                         System.out.println("El total de "+cocinero[0]+" de la semana es: "+pagoC[0]);

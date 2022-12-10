@@ -4,7 +4,7 @@ package comandas;
 import java.util.Scanner;
 
 public class Comandas {
-    public static void Comandas(double ganancias, double sbebida[], int valorm, double valorsnk, int valorp, int valorb, double shamburguesa, double squeso, double spanl, double spanh, double sharina, double smilanesa, int ordenessumatoria, String listacomanda[][], double ordenes, double precioP[], double precioM[], double precioB[], String pizza[], String bebida[], String minuta[], String bandera) {
+    public static void Comandas(double ganancias[], double sbebida[], int valorm, double valorsnk, int valorp, int valorb, double shamburguesa, double squeso, double spanl, double spanh, double sharina, double smilanesa, int ordenessumatoria, String listacomanda[][], double ordenes, double precioP[], double precioM[], double precioB[], String pizza[], String bebida[], String minuta[], String bandera[]) {
         Scanner entrada = new Scanner(System.in);
        // Le damos valores a las distintas comidas,productos y stock
          
