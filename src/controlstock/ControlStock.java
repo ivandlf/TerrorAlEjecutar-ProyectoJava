@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ControlStock {
 
-    public static void controlStock(String[] bebida, double valorB, double[] Sbebida, double[] Ssnack, String[] snack, double valorSNK, double gastos[], double ganancias [], double Shamburguesa, double Squeso, double SpanL, double SpanH, double Sharina, double Smilanesa) {
+    public static void controlStock(String[] bebida, double valorB[], double[] Sbebida, double[] Ssnack, String[] snack, double valorSNK[], double gastos[], double ganancias [], double Shamburguesa[], double Squeso[], double SpanL[], double SpanH[], double Sharina[], double Smilanesa[]) {
 
         Scanner teclado = new Scanner(System.in);
         
@@ -50,7 +50,7 @@ public class ControlStock {
                         System.out.println("*** Avisos *** ");
                         System.out.println("--------------------------");
 
-                        for (i = 0; i <= valorB; i++) {
+                        for (i = 0; i <= valorB[0]; i++) {
                             System.out.println(i + "Bajo stock de" + bebida[i]);
                         }
                         System.out.println("--------------------------");
@@ -62,8 +62,10 @@ public class ControlStock {
                             case 2 -> EntradaBebidas.entradaBebidas(Sbebida, valorB, bebida, gastos);
                             case 3 -> BebidasPerdidas.bebidasPerdidas(Sbebida, valorB, bebida);
                             case 4 -> {
+                                break;
                     }
                             case 5 -> {
+                                break;
                     }
                             default -> {
                                 System.out.println("------------------------------------------------------------------------------------------------");
@@ -95,46 +97,46 @@ public class ControlStock {
                         System.out.println("***Avisos***");
                         System.out.println("------------------------------------------");
                         
-                        if (SpanL <= 10) {//Aviso de que hay que pedir más mercaderia
+                        if (SpanL[0] <= 10) {//Aviso de que hay que pedir más mercaderia
                             System.out.println("Hay mucha cantidad de packs de panes de lomos. No pedir más de momento");
                         } else {
-                            if (SpanL >= 60) {//Aviso de que hay que pedir menos mercaderia
+                            if (SpanL[0] >= 60) {//Aviso de que hay que pedir menos mercaderia
                                 System.out.println("Hay mucha cantidad de packs de panes de lomos. No pedir más de momento");
                             }
                         }
 
-                        if (SpanH <= 10) {
+                        if (SpanH[0] <= 10) {
                             System.out.println("Quedan pocos panes de hamburguesas. Pedir un poco más");
                         } else {
-                            if (SpanH <= 100) {//Aviso de que hay que pedir más mercaderia
+                            if (SpanH[0] <= 100) {//Aviso de que hay que pedir más mercaderia
                                 System.out.println("Quedan pocos panes de hamburguesas. Pedir un poco más");
                             }
                         }
-                        if (Smilanesa <= 10) {
+                        if (Smilanesa[0] <= 10) {
                             System.out.println("Quedan pocas milanesas, pedir un poco más ");
                         } else {
-                            if (Smilanesa >= 50) {
+                            if (Smilanesa[0] >= 50) {
                                 System.out.println("Hay muchas milanesas, no pedir más de momento");
                             }
                         }
-                        if (Sharina <= 15) {
+                        if (Sharina[0] <= 15) {
                             System.out.println("Hay pocos kg de harina, pedir un poco más");
                         } else {
-                            if (Sharina >= 100) {
+                            if (Sharina[0] >= 100) {
                                 System.out.println("Hay muchos kg de harina, no pedir más de momento");
                             }
                         }
-                        if (Squeso <= 3) {
+                        if (Squeso[0] <= 3) {
                             System.out.println("Queda poca cantidad de queso, perdir más");
                         } else {
-                            if (Squeso >= 15) {
+                            if (Squeso[0] >= 15) {
                                 System.out.println("Hay mucha cantidad de queso, no pedir más de momento");
                             }
                         }
-                        if (Shamburguesa <= 10) {
+                        if (Shamburguesa[0] <= 10) {
                             System.out.println("Quedan pocas hamburguesas, pedir más");
                         } else {
-                            if (Shamburguesa > 100) {
+                            if (Shamburguesa[0] > 100) {
                                 System.out.println("Hay muchas hamburguesas, no pedir más de momento");
                             }
                         }
@@ -176,7 +178,7 @@ public class ControlStock {
                         System.out.println(" -----------------------------------------");
                         System.out.println(" ***Avisos***");
                         System.out.println("-------------------------");
-                        for (i = 0; i <= valorSNK; i++) {
+                        for (i = 0; i <= valorSNK[0]; i++) {
                             System.out.println(i + "Bajo stock de " + snack[i]);
                         }
                         

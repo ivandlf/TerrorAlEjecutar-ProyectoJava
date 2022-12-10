@@ -36,7 +36,7 @@ public class CalculoJornales {
 			System.out.println(" ");
 		}
 		// se muestra el total de horas de la semana 
-		System.out.println("La cantidad de horas semanales de este empleado son: "+horasT);
+		System.out.println("La cantidad de horas semanales de este empleado son: "+horasT[0]);
 	}
 
 	public static double calculosalario(double horasT[], double salario[]) {

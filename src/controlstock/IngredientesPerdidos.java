@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class IngredientesPerdidos {
 
-    public static void ingredientesPerdidos(double Shamburguesa, double Squeso, double SpanL, double SpanH, double Sharina, double Smilanesa) {
+    public static void ingredientesPerdidos(double Shamburguesa[], double Squeso[], double SpanL[], double SpanH[], double Sharina[], double Smilanesa[]) {
         // Este subproceso sirve para marcar aquellos ingredientes perdidos o echados a perder.
         Scanner teclado = new Scanner(System.in);
         float Perdida;
@@ -43,32 +43,32 @@ public class IngredientesPerdidos {
             case 1: 
                 System.out.println("Ingrese en KG la cantidad de queso perdido: ");
                 Perdida = Integer.parseInt(teclado.next());
-                Squeso = Squeso - Perdida;
+                Squeso[0] -= Perdida;
                 break;
             case 2:
                 System.out.println("Ingrese la cantidad de panes de hamburgesa perdidos: ");
                 Perdida = Integer.parseInt(teclado.next());
-                SpanH = SpanH - Perdida;
+                SpanH[0] -= Perdida;
                 break;
             case 3:
                 System.out.println("Ingrese la cantidad de panes de lomo perdidos: ");
                 Perdida = Integer.parseInt(teclado.next());
-                SpanL = SpanL - Perdida;
+                SpanL[0] -= Perdida;
                 break;
             case 4:
                 System.out.println("Ingrese la cantidad de hamburguesas perdidas: ");
                 Shamburguesa = Integer.parseInt(teclado.next());
-                Shamburguesa = Shamburguesa - Perdida;
+                Shamburguesa[0] -= Perdida;
                 break;
             case 5:
                 System.out.println("Ingrese la cantidad de milanesas perdidas: ");
                 Perdida = Integer.parseInt(teclado.next());
-                Smilanesa = Smilanesa - Perdida;
+                Smilanesa[0] -= Perdida;
                 break;
             case 6:
                 System.out.println("Ingrese en KG la cantidad de harina perdida: ");
                 Perdida = Integer.parseInt(teclado.next());
-                Sharina = Sharina - Perdida;
+                Sharina[0] -= Perdida;
                 break;
             case 7:
                 break;

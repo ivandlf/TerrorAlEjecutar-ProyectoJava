@@ -13,7 +13,7 @@ public class MenuPrincipal {
         String banderaCa[] = new String[1];
         String banderaCo[] = new String[1];
         String barman [] = new String[1];
-        double bebidas;
+        double bebidas[] = new double[1];
 	String cajero[] = new String[1];
         String cocinero[] = new String[1];
 	double ganancias[] = new double[1] ;
@@ -21,16 +21,23 @@ public class MenuPrincipal {
         double horasT[] = new double[1];
 	String minuta[] = new String[1];
         int num;
-	int ordenes;
-        int ordenessumatoria;
+	int ordenes[] = new int[1];
+        int ordenessumatoria[] = new int[1];
 	double pagoB[] = new double[1];
         double pagoC[] = new double[1];
 	double pagoCA[] = new double[1];
 	double salario[] = new double[1];
-        double Shamburguesa, Sharina, Smilanesa;
+        double Shamburguesa[] = new double[1];
+        double Sharina[] = new double[1];
+        double Smilanesa[] = new double[1];
 
-        double SpanH, SpanL, Squeso;
-        int valorB, valorM, valorP, valorSNK;
+        double SpanH[] = new double[1];
+        double SpanL[] = new double[1];
+        double Squeso[] = new double[1];
+        int valorB[] = new int[1];
+        int valorM[] = new int[1];
+        int valorP[] = new int[1];
+        int valorSNK[] = new int[1];
         // A continuacion Definimos todas las variables necesarias para definir las jornadas laborales
 	// Tanto los dias de semana como las horas de cada empleado se guardan en arreglos para que cuando lo veamos sea mas estetico
         String semana[][] = new String [1][5];
@@ -50,6 +57,10 @@ public class MenuPrincipal {
 	double Ssnack [] = new double[999];
         minuta = new String[999];
 	double precioM [] = new double[999];
+
+
+
+
         // A continuacion definimos valores a todas las variables necesaras para  que funcione el programa
 	// Asignamos un valor falso a las banderas
         banderaCo[0] = "f";
@@ -69,22 +80,22 @@ public class MenuPrincipal {
         listacomanda[0][4] = "Bebidas";
         listacomanda[0][5] = "Total";
 	// Le damos valores a las distintas comidas,productos y stock
-        ordenessumatoria = 0;
-	valorB = 2;
-        valorP = 2;
-	valorSNK = 2;
-        valorM = 2;
+        ordenessumatoria[0] = 0;
+	valorB[0] = 2;
+        valorP[0] = 2;
+	valorSNK[0] = 2;
+        valorM[0] = 2;
 	bandera[0] = "";
-        ordenes = 0;
+        ordenes[0] = 0;
 	gastos[0] = 0;
         ganancias[0] = 0;
-	Shamburguesa = 10;
-        Squeso = 5;
-	SpanL = 10;
-        SpanH = 10;
-	Smilanesa = 10;
-        Sharina = 5;
-	bebidas = 0;
+	Shamburguesa[0] = 10;
+        Squeso[0] = 5;
+	SpanL[0] = 10;
+        SpanH[0] = 10;
+	Smilanesa[0] = 10;
+        Sharina[0] = 5;
+	bebidas[0] = 0;
         Ssnack[0] = 0;
 	Ssnack[1] = 0;
         Ssnack[2] = 0;
@@ -130,7 +141,7 @@ public class MenuPrincipal {
 		System.out.println("|                                        |");
 		System.out.println("|    * Opcion 1: Control Stock           |");
                 System.out.println("|    * Opcion 2: Jornales                |");
-		System.out.println("|    * Opcion 3: Menu                   |");
+		System.out.println("|    * Opcion 3: Menu                    |");
 		System.out.println("|    * Opcion 4: Comandas                |");
                 System.out.println("|    * Opcion 5: Costos y ganacias       |");
 		System.out.println("|    * Opcion 6: Salir                   |");

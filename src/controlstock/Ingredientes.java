@@ -8,11 +8,11 @@ import java.util.Scanner;
 
 public class Ingredientes {
 
-    public static void ingredientes(double SpanH, double SpanL, double Squeso, double Sharina, double Shamburguesa, double Smilanesa, double gastos[]) {
+    public static void ingredientes(double SpanH[], double SpanL[], double Squeso[], double Sharina[], double Shamburguesa[], double Smilanesa[], double gastos[]) {
         
         Scanner teclado = new Scanner(System.in);
 
-        float Pqueso, packH, packL, PpanL, PpanH = 0, Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
+        float Pqueso, packH, packL, PpanL, PpanH = 0 , Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
 
         int num;
 
@@ -42,7 +42,7 @@ public class Ingredientes {
                     System.out.println("Determinar el precio del KG de queso: ");
                     Pqueso = Integer.parseInt(teclado.next());
                     gastos[0] += (queso * Pqueso); // Se hace una suma iterativa de gastos, as� se van sumando todos los precios de los productos.
-                    Squeso = Squeso + queso;
+                    Squeso[0] += queso;
                     break;
 
                 case 2: // Opcion 2
@@ -51,7 +51,7 @@ public class Ingredientes {
                     System.out.println("Determinar el tamaño del pack de panes: ");
                     PanH = Integer.parseInt(teclado.next());
                     gastos[0] += (packH * PpanH); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    SpanH = SpanH + (packH * PanH); // Suma al stock el nuevo stock de dicho ingrediente.
+                    SpanH[0] +=  (packH * PanH); // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 3: // Opcion 3
@@ -62,7 +62,7 @@ public class Ingredientes {
                     System.out.println("Ingresar el precio de los packs: ");
                     PpanL = Integer.parseInt(teclado.next());
                     gastos[0] += (packL * PpanL); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    SpanL = SpanL + (packL * PanL); // Suma al stock el nuevo stock de dicho ingrediente.
+                    SpanL[0] += (packL * PanL); // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 4: // Opcion 4
@@ -73,7 +73,7 @@ public class Ingredientes {
                     System.out.println("Ingresar el precio de los packs de hamburguesas: ");
                     Phamburguesa = Integer.parseInt(teclado.next());
                     gastos[0] += (packH * Phamburguesa); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    Shamburguesa = Shamburguesa + (packH * hamburguesa); // Suma al stock el nuevo stock de dicho ingrediente.
+                    Shamburguesa[0] += (packH * hamburguesa); // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 5: // Opcion 4
@@ -81,10 +81,10 @@ public class Ingredientes {
                     kgMilanesa = Integer.parseInt(teclado.next());
                     System.out.println("Determinar el precio de el KG de milanesa: ");
                     Pmilanesa = Integer.parseInt(teclado.next());
-                    System.out.println("Determinar la cantidad de milanesas que ingresaron ");
+                    System.out.println("Determinar la cantidad de milanesas por kilo ");
                     milanesa = Integer.parseInt(teclado.next());
                     gastos[0] += (kgMilanesa * Pmilanesa); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    Smilanesa = Shamburguesa + (Smilanesa * milanesa); // Suma al stock el nuevo stock de dicho ingrediente.
+                    Smilanesa[0] += (Smilanesa * milanesa); // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 6: // Opcion 6
@@ -93,7 +93,7 @@ public class Ingredientes {
                     System.out.println("Ingresar el precio del KG de harina: ");
                     Pharina = Integer.parseInt(teclado.next());
                     gastos[0] += (harina * Pharina); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    Sharina = Sharina + harina; // Suma al stock el nuevo stock de dicho ingrediente.
+                    Sharina[] += harina; // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 7: // Opcion 7: Salir. Sale del condicional.

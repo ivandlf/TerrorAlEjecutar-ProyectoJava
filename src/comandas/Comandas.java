@@ -4,11 +4,11 @@ package comandas;
 import java.util.Scanner;
 
 public class Comandas {
-    public static void Comandas(double ganancias[], double sbebida[], int valorm, double valorsnk, int valorp, int valorb, double shamburguesa, double squeso, double spanl, double spanh, double sharina, double smilanesa, int ordenessumatoria, String listacomanda[][], double ordenes, double precioP[], double precioM[], double precioB[], String pizza[], String bebida[], String minuta[], String bandera[]) {
+    public static void Comandas(double ganancias[], double sbebida[], int valorm[], double valorsnk[], int valorp[], int valorb[], double shamburguesa[], double squeso[], double spanl[], double spanh[], double sharina[], double smilanesa[], int ordenessumatoria[], String listacomanda[][], double ordenes[], double precioP[], double precioM[], double precioB[], String pizza[], String bebida[], String minuta[], String bandera[]) {
         Scanner entrada = new Scanner(System.in);
        // Le damos valores a las distintas comidas,productos y stock
          
-        int precioTotal = 0;
+        double precioTotal = 0;
         int num = 0;
         
        // Mostramos el menu de opciones
@@ -51,7 +51,7 @@ public class Comandas {
                          System.out.print("+---+----------+--------------------+--------------------+--------------------+--------------------+");
                          //Mostramos los pedidos
                          System.out.println("");
-                         for (int i = 1; i <= ordenessumatoria; i++) {
+                         for (int i = 1; i <= ordenessumatoria[0]; i++) {
                              for (int j = 0; j < listacomanda[i].length; j++) {
                                  if(j==0){
                                      System.out.printf("|%-3S",listacomanda[i][0]);
@@ -89,7 +89,7 @@ public class Comandas {
                     System.out.println("ingrese la cantidad de ordenes a tomar");
                     ordenes = entrada.nextInt();
                     bandera[0] = "v";
-                    for (int i = ordenessumatoria; i <=ordenessumatoria; i++) {
+                    for (int i = ordenessumatoria[0]; i <=ordenessumatoria[0]; i++) {
                         for (int j = 0; j < 5; j++) {
                             int opcomanda;
                             if(j<2){
@@ -118,16 +118,16 @@ public class Comandas {
                                             System.out.println("Ingrese la cantidad de Pizzas: ");
                                             int cantidadpi = entrada.nextInt();
                                             System.out.println("elija la variedad: ");
-                                            for (int k = 0; valorp >= k; k++) {
+                                            for (int k = 0; valorp[0] >= k; k++) {
                                                 System.out.println(k+". "+pizza[k]);
                                             }
-                                            System.out.println(valorp+1+". Nada");
+                                            System.out.println(valorp[0]+1+". Nada");
                                             int opcionPi = entrada.nextInt();
-                                            if (sharina>0.3 && squeso>0.3) {
-                                                if (opcionPi<=valorp) {
+                                            if (sharina[0]>0.3 && squeso[0]>0.3) {
+                                                if (opcionPi<=valorp[0]) {
                                                     listacomanda[i+1][2]= pizza[opcionPi]+" X "+cantidadpi;
-                                                    sharina = sharina-0.3;
-                                                    squeso = squeso-0.3;
+                                                    sharina[0] -= 0.3;
+                                                    squeso[0] -=0.3;
                                                     precioTotal += precioP[opcionPi]*cantidadpi;
                                                     System.out.println(precioTotal);
                                                 }
@@ -145,18 +145,18 @@ public class Comandas {
 
                                         case 2:
                                             System.out.println("Ingrese la Minuta: ");
-                                            for (int l = 0; valorm >= l; l++) {
+                                            for (int l = 0; valorm[0] >= l; l++) {
                                                 System.out.println(l+". "+minuta[l]);
                                             }
-                                            System.out.println(valorm+1+". Nada");
+                                            System.out.println(valorm[0]+1+". Nada");
                                             int opcionMi = entrada.nextInt();
                                             
-                                            if(opcionMi<=valorm){
+                                            if(opcionMi<=valorm[0]){
                                                 System.out.println("Ingrese la cantidad de "+minuta[opcionMi]);
                                                 int cantidadMi = entrada.nextInt();
                                                 if (opcionMi==0) {
-                                                    if (smilanesa>1) {
-                                                        smilanesa = smilanesa-1;
+                                                    if (smilanesa[0]>1) {
+                                                        smilanesa[0] -= 1;
                                                         listacomanda[i+1][3] = minuta[opcionMi]+" X "+cantidadMi;
                                                         precioTotal += precioM[opcionMi]*cantidadMi;
                                                     }
@@ -167,26 +167,29 @@ public class Comandas {
                                                     }
                                                 }
                                                 if (opcionMi==1) {
-                                                    if (spanl>1) {
-							listacomanda[i+1][3] = minuta[opcionMi]+" X "+cantidadMi;
-							precioTotal += precioM[opcionMi]*cantidadMi;
-							spanl = spanl-1;
-                                                    } else {
-							System.out.println("  ---------------------------------------------------");
-							System.out.println(" |No hay stock de alimentos para realizar esta comanda|");
-							System.out.println("  ---------------------------------------------------");
+                                                    if (spanl[0]>1) {
+							                        listacomanda[i+1][3] = minuta[opcionMi]+" X "+cantidadMi;
+							                        precioTotal += precioM[opcionMi]*cantidadMi;
+							                        spanl[0] -= 1;
+                                                    } 
+                                                    else {
+							                        System.out.println("  ---------------------------------------------------");
+							                        System.out.println(" |No hay stock de alimentos para realizar esta comanda|");
+							                        System.out.println("  ---------------------------------------------------");
                                                     }
                                                 }
+                                                
                                                 if (opcionMi==2) {
-                                                    if (shamburguesa>1 && spanh>1) {
-							listacomanda[i+1][3] = minuta[opcionMi]+" X "+cantidadMi;
-							precioTotal += precioM[opcionMi]*cantidadMi;
-							shamburguesa -= 1;
-							spanh -= 1;
-                                                    } else {
-							System.out.println("  ---------------------------------------------------");
-							System.out.println(" |No hay stock de alimentos para realizar esta comanda|");
-							System.out.println("  ---------------------------------------------------");
+                                                    if (shamburguesa[0]>1 && spanh[0]>1) {
+							                            listacomanda[i+1][3] = minuta[opcionMi]+" X "+cantidadMi;
+							                            precioTotal += precioM[opcionMi]*cantidadMi;
+							                            shamburguesa[0] -= 1;
+							                            spanh[0] -= 1;
+                                                    } 
+                                                    else {
+							                            System.out.println("  ---------------------------------------------------");
+							                            System.out.println(" |No hay stock de alimentos para realizar esta comanda|");
+							                            System.out.println("  ---------------------------------------------------");
                                                     }
                                                 }
                                             }
@@ -195,26 +198,27 @@ public class Comandas {
 
                                         case 3:
                                             System.out.println("Bebidas: ");
-                                            for (int m = 0; valorb >= m; m++) {
+                                            for (int m = 0; valorb[0] >= m; m++) {
                                                 System.out.println(m+". "+bebida[m]);
                                             }
-                                            System.out.println(valorb+1+". Nada");
+                                            System.out.println((valorb[0]+1)+". Nada");
                                             System.out.println("elija su opcion: ");
                                             int opcionBe = entrada.nextInt();
                                             System.out.println("elija la cantidad de "+bebida[opcionBe]);
                                             int cantidadBe = entrada.nextInt();
-                                            if (opcionBe<=valorb) {
-						if (sbebida[opcionBe]>1) {
-						listacomanda[i+1][4] = bebida[opcionBe]+" X "+cantidadBe;
-						precioTotal += precioB[opcionBe]*cantidadBe;
-						sbebida[opcionBe] = sbebida[opcionBe]-1;
-                                                } else {
-						System.out.println("  ---------------------------------------------------");
-						System.out.println(" |No hay stock de alimentos para realizar esta comanda|");
-						System.out.println("  ---------------------------------------------------");
-						}
+                                            if (opcionBe<=valorb[0]) {
+						                        if (sbebida[opcionBe]>1) {
+						                        listacomanda[i+1][4] = bebida[opcionBe]+" X "+cantidadBe;
+						                        precioTotal += precioB[opcionBe]*cantidadBe;
+						                        sbebida[opcionBe] = sbebida[opcionBe]-1;
+                                                } 
+                                                else {
+					                                System.out.println("  ---------------------------------------------------");
+						                            System.out.println(" |No hay stock de alimentos para realizar esta comanda|");
+						                            System.out.println("  ---------------------------------------------------");
+						                        }
                                             }
-                                            if (opcionBe==valorb+1) {
+                                            if (opcionBe==(valorb[0]+1)) {
                                                 listacomanda[i+1][4] = " ninguno";
                                             }
                                             break;
