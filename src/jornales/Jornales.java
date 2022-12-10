@@ -7,7 +7,7 @@ import static jornales.CalculoJornales.calculosalario;
 
 public class Jornales {
     
-public static void jornales(String[][] semana, double[][] horas, double[][] horasC, double[][] horasB, double[][] horasCA, double gastos, String cocinero, String barman, String cajero, String[][] semana1, String banderaCo, String banderaB, String banderaCa, double[][] horasC1, double[][] horasB1, double[][] horasCA1, double salario, double horasT, double[][] horas1, double pagoB, double pagoC, double pagoCA){
+public static void jornales(String[][] semana, double[][] horas, double[][] horasC, double[][] horasB, double[][] horasCA, double gastos[], String cocinero[], String barman[], String cajero[], String[][] semana1, String banderaCo[], String banderaB[], String banderaCa[], double[][] horasC1, double[][] horasB1, double[][] horasCA1, double salario[], double horasT[], double[][] horas1, double pagoB[], double pagoC[], double pagoCA[]){
 		int i, j;
 		int num;
                 Scanner entrada = new Scanner(System.in);
@@ -37,18 +37,18 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                 // Damos mensajes para aquellos casos en los que no hayan sido definidas las jornadas
                                 System.out.println(" ");
                                 System.out.println("VER JORNADAS: ");
-                                if (banderaCo.equals("v")) {
-                                    System.out.println("1_ Cocinero: "+cocinero);
+                                if (banderaCo[0].equals("v")) {
+                                    System.out.println("1_ Cocinero: "+cocinero[0]);
                                 } else {
                                     System.out.println("falta editar las jornadas del cocinero");
                                 }
-                                if (banderaB.equals("v")) {
-                                    System.out.println("2_ Barman: "+barman);
+                                if (banderaB[0].equals("v")) {
+                                    System.out.println("2_ Barman: "+barman[0]);
                                 } else {
                                     System.out.println("falta editar las jornadas del barman");
                                 }
-                                if (banderaCa.equals("v")) {
-                                    System.out.println("3_ Cajero: "+cajero);
+                                if (banderaCa[0].equals("v")) {
+                                    System.out.println("3_ Cajero: "+cajero[0]);
                                 } else {
                                     System.out.println("Falta editar las jornadas del cajero");
                                 }
@@ -59,7 +59,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                 switch (num) {
                                     case 1 -> {
                                         // A continuacion mostramos los arreglos, primero los dias de la semana y luego las horas que registramos para queda uno, esto de manera ordenada y separada por empleado
-                                        if (banderaCo.equals ("v")) {
+                                        if (banderaCo[0].equals ("v")) {
                                             System.out.println("Se encarga de la cocina");
                                             for (i=0;i<=1;i++) {
                                                 for (j=0;j<=4;j++) {
@@ -71,14 +71,14 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                                 }
                                                 System.out.println(" ");
                                             }
-                                            System.out.println("salario de esta semana: "+pagoC);
+                                            System.out.println("salario de esta semana: "+pagoC[0]);
                                         } else {
                                             System.out.println("PRIMERO DEBE EDITAR LAS JORNADAS");
                                             System.out.println("");
                                         }
                                     }
                                     case 2 -> {
-                                        if (banderaB.equals("v")) {
+                                        if (banderaB[0].equals("v")) {
                                             System.out.println("Se encarga de la barra");
                                             System.out.println("Jornada semana: ");
                                             System.out.println("");
@@ -92,14 +92,14 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                                 }
                                                 System.out.println(" ");
                                             }
-                                            System.out.println("salario de esta semana: "+pagoB);
+                                            System.out.println("salario de esta semana: "+pagoB[0]);
                                         } else {
                                             System.out.println("PRIMERO DEBE EDITAR LAS JORNADAS");
                                             System.out.println("");
                                         }
                                     }
                                     case 3 -> {
-                                        if (banderaCa.equals("v")) {
+                                        if (banderaCa[0].equals("v")) {
                                             System.out.println("Se encarga de la caja");
                                             System.out.println("Jornada semana: ");
                                             System.out.println("");
@@ -113,7 +113,7 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                                 }
                                                 System.out.println(" ");
                                             }
-                                            System.out.println("salario de esta semana: "+pagoCA);
+                                            System.out.println("salario de esta semana: "+pagoCA[0]);
                                         } else {
                                             System.out.println("PRIMERO DEBE EDITAR LAS JORNADAS");
                                             System.out.println("");
@@ -157,9 +157,9 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                         // A travez de una Funcion sencilla, agregamos el sueldo a gastos, y mostramos su pago al gerente, y le asignamos a bandera que ya esta lista para ver su joranada en su seccion
                                         System.out.println(" ");
                                         System.out.println("Digite el nombre del empleado: ");
-                                        cocinero = entrada.next();
+                                        cocinero[0] = entrada.next();
                                         System.out.println("Definir salario por hora: ");
-                                        salario = entrada.nextInt();
+                                        salario[0] = entrada.nextInt();
                                         System.out.println("");
                                         // invocamos a el SubProceso:  CalculoJornales(HorasT)
                                         calculojornales(horasT,semana,horas);
@@ -167,18 +167,18 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                             horasC[0][j] = horas[0][j];
                                         }
                                         // se le asigna la suma de  las horas semanales
-                                        pagoC = calculosalario(horasT,salario);
-                                        gastos += pagoC;
-                                        banderaCo = "v";
+                                        pagoC[0] = calculosalario(horasT,salario);
+                                        gastos += pagoC[0];
+                                        banderaCo[0] = "v";
                                         // mostramos el total del pago semanal
-                                        System.out.println("El total de "+cocinero+" de la semana es: "+pagoC);
+                                        System.out.println("El total de "+cocinero[0]+" de la semana es: "+pagoC[0]);
                                     }
                                     case 2 -> {
                                         System.out.println(" ");
                                         System.out.print("Digite el nombre del empleado: ");
-                                        barman = entrada.next();
+                                        barman[0] = entrada.next();
                                         System.out.print("Digite salario por hora: ");
-                                        salario = entrada.nextDouble();
+                                        salario[0] = entrada.nextDouble();
                                         System.out.println(""); 
                                         // invocamos a el SubProceso:  CalculoJornales(HorasT)
                                         calculojornales(horasT,semana,horas);
@@ -186,18 +186,18 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                             horasB[0][j] = horas[0][j];
                                         }
                                         // se le asigna la suma de  las horas semanales
-                                        pagoB = calculosalario(horasT,salario);
-                                        gastos += pagoB;
-                                        banderaB = "v";
+                                        pagoB[0] = calculosalario(horasT,salario);
+                                        gastos[0] += pagoB[0];
+                                        banderaB[0] = "v";
                                         // mostramos el total del pago semanal
-                                        System.out.println("El pago de "+barman+" de la semana es: "+pagoB);
+                                        System.out.println("El pago de "+barman[0]+" de la semana es: "+pagoB[0]);
                                     }
                                     case 3 -> {
                                         System.out.println(" ");
                                         System.out.print("Digite el nombre del empleado: ");
-                                        cajero = entrada.next();
+                                        cajero[0] = entrada.next();
                                         System.out.print("Digite salario por hora: ");
-                                        salario = entrada.nextDouble();
+                                        salario[0] = entrada.nextDouble();
                                         System.out.println(""); 
                                         // invocamos a el SubProceso:  CalculoJornales(HorasT)
                                         calculojornales(horasT,semana,horas);
@@ -205,11 +205,11 @@ public static void jornales(String[][] semana, double[][] horas, double[][] hora
                                             horasCA[0][j] = horas[0][j];
                                         }
                                         // se le asigna la suma de  las horas semanales
-                                        pagoCA = calculosalario(horasT,salario);
-                                        gastos += pagoCA;
-                                        banderaCa = "v";
+                                        pagoCA[0] = calculosalario(horasT,salario);
+                                        gastos[0] += pagoCA[0];
+                                        banderaCa[0] = "v";
                                         // mostramos el total del pago semanal
-                                        System.out.println("El pago de "+cajero+" de la semana es: "+pagoCA);
+                                        System.out.println("El pago de "+cajero[0]+" de la semana es: "+pagoCA[0]);
                                     }
                                     case 4 -> {
                                     }

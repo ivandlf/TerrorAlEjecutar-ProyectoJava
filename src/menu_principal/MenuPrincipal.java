@@ -8,20 +8,20 @@ import java.util.Scanner;
 public class MenuPrincipal {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        String bandera, banderaB, banderaCa, banderaCo, bebida[];
-        String barman = null;
+        String bandera[], banderaB[], banderaCa[], banderaCo[], bebida[];
+        String barman [];
         double bebidas;
-	String cajero = null;
-        String cocinero = null;
-	double ganancias, gastos, horasT = 0;
+	String cajero[];
+        String cocinero[];
+	double ganancias, gastos, horasT[];
 	String minuta[];
         int num;
 	int ordenes;
         int ordenessumatoria;
-	double pagoB = 0;
-        double pagoC = 0;
-	double pagoCA = 0;
-	double salario = 0;
+	double pagoB[];
+        double pagoC[];
+	double pagoCA[];
+	double salario[];
         double Shamburguesa, Sharina, Smilanesa;
 	String snack[];
         double SpanH, SpanL, Squeso;
@@ -47,9 +47,9 @@ public class MenuPrincipal {
 	double precioM [] = new double[999];
         // A continuacion definimos valores a todas las variables necesaras para  que funcione el programa
 	// Asignamos un valor falso a las banderas
-        banderaCo = "f";
-	banderaB = "f";
-        banderaCa = "f";
+        banderaCo[0] = "f";
+	banderaB[0] = "f";
+        banderaCa[0] = "f";
 	// Asignamos los dias de la semana a su respectiva matriz
         semana[0][0] = "Lunes ";
 	semana[0][1] = "Martes ";
@@ -57,7 +57,7 @@ public class MenuPrincipal {
 	semana[0][3] = "Jueves ";
         semana[0][4] = "Viernes";
         // Asignamos los titulares de la lista comandas en la matriz
-        listacomanda[0][0] = "N°";
+        listacomanda[0][0] = "Nï¿½";
         listacomanda[0][1] = "Comensales";
         listacomanda[0][2] = "Pizzas";
         listacomanda[0][3] = "Minutas";

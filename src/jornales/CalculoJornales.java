@@ -8,19 +8,19 @@ public class CalculoJornales {
 	// SUBPROCESO CALCULO JORNALES
 	// ----------------------------
 	// Subproceso para asignar horas a empleados
-	public static void calculojornales(double horast, String semana[][], double horas[][]) {
+	public static void calculojornales(double horast[0], String semana[][], double horas[][]) {
             Scanner entrada = new Scanner(System.in);
 		int i;
 		int j;
 		int pago;
 		// asignamos un valor a HorasT 
-		horast = 0;
+		horast[0] = 0;
 		// esto recorrer los 5 dias y va poniendo las horas que trabajo 
 		for (j=0;j<=4;j++) {
 			System.out.print("Definir las horas del dia "+(j+1)+" De la semana: ");
 			horas[0][j] = entrada.nextDouble();
 			// aca se van sumando el total de horas q trabajo en la semana 
-			horast = horast+horas[0][j];
+			horast[0] = horast[0]+horas[0][j];
 			System.out.println(""); 
 		}
 		// recorremos la matriz
@@ -40,10 +40,10 @@ public class CalculoJornales {
 		System.out.println("La cantidad de horas semanales de este empleado son: "+horast);
 	}
 
-	public static double calculosalario(double horast, double salario) {
+	public static double calculosalario(double horast[], double salario[]) {
 		double pago;
 		// esta funcion realiza un calculo multiplicando el salario por horas, y las horas de la semana
-		pago = horast*salario;
+		pago = horast[0]*salario[0];
 		return pago;
 	}
 }
