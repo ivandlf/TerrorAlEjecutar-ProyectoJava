@@ -40,7 +40,7 @@ public class MenuPrincipal {
         double horasCA [][] = new double[1][5];
 	String[][] listacomanda = new String[999][999];
         listacomanda = new String[50][6];
-        String bebida = new String[999];
+        String bebida[] = new String[999];
 	double precioB[] = new double[999];
         double Sbebida [] = new double[999];
 	String pizza [] = new String[999];
