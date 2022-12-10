@@ -45,7 +45,7 @@ public class MenuPrincipal {
         double Sbebida [] = new double[999];
 	String pizza [] = new String[999];
         double precioP[] = new double[999];
-	String snack = new String[999];
+	String snack[] = new String[999];
         double precioSNK [] = new double[999];
 	double Ssnack [] = new double[999];
         minuta = new String[999];
@@ -62,7 +62,7 @@ public class MenuPrincipal {
 	semana[0][3] = "Jueves ";
         semana[0][4] = "Viernes";
         // Asignamos los titulares de la lista comandas en la matriz
-        listacomanda[0][0] = "N�";
+        listacomanda[0][0] = "N°";
         listacomanda[0][1] = "Comensales";
         listacomanda[0][2] = "Pizzas";
         listacomanda[0][3] = "Minutas";
