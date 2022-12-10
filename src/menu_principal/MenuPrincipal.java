@@ -17,8 +17,8 @@ public class MenuPrincipal {
 	String cajero[] = new String[1];
         String cocinero[] = new String[1];
 	double ganancias[] = new double[1] ;
-        Double gastos[] = new double[1];
-        Double horasT[] = new double[1];
+        double gastos[] = new double[1];
+        double horasT[] = new double[1];
 	String minuta[] = new String[1];
         int num;
 	int ordenes;
