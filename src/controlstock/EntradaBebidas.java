@@ -26,7 +26,7 @@ public class EntradaBebidas {
             Sbebida[opcion] = Sbebida[opcion] + aux; // Aumentamos la cantidad ingresada al stock total
             System.out.println("");
             System.out.println("Ingrese precio por botella");
-            precio = Integer.Double.parseDouble(teclado.nextLine());
+            precio = Double.parseDouble(teclado.nextLine());
             gastos[0] += (precio + aux); // Sumamos los gastos de la compra de las bebudas a gastis totales
         }
     }
