@@ -88,7 +88,7 @@ public class Comandas {
                     System.out.println("  -----------------------------------");
                     System.out.println("ingrese la cantidad de ordenes a tomar");
                     ordenes = entrada.nextInt();
-                    bandera = "v";
+                    bandera[0] = "v";
                     for (int i = ordenessumatoria; i <=ordenessumatoria; i++) {
                         for (int j = 0; j < 5; j++) {
                             int opcomanda;
@@ -231,7 +231,7 @@ public class Comandas {
                                     }
                                 }while (opcomanda!=4);
                                 listacomanda[i+1][5]= "$ "+Integer.toString(precioTotal);
-                                ganancias += precioTotal;
+                                ganancias[0] += precioTotal;
                                 precioTotal = 0;
                                 
                             }    
@@ -240,7 +240,7 @@ public class Comandas {
                     ordenessumatoria += ordenes;
                 }
             }
-            System.out.println("ganancias: "+ganancias);
+            System.out.println("ganancias: "+ganancias[0]);
         }while (num!=3);
     }
 }

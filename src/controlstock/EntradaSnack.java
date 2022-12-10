@@ -7,7 +7,7 @@ import java.util.Scanner;
 //--------------------------
 
 public class EntradaSnack {
-    public static void entradaSnack(double[] Ssnack, double valorSNK, String[] snack, double gastos){
+    public static void entradaSnack(double[] Ssnack, double valorSNK, String[] snack, double gastos[]){
         
         Scanner teclado = new Scanner(System.in);
         

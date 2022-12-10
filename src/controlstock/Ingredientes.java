@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Ingredientes {
 
-    public static void ingredientes(double SpanH, double SpanL, double Squeso, double Sharina, double Shamburguesa, double Smilanesa, double gastos) {
+    public static void ingredientes(double SpanH, double SpanL, double Squeso, double Sharina, double Shamburguesa, double Smilanesa, double gastos[]) {
         
         Scanner teclado = new Scanner(System.in);
 

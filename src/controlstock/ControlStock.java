@@ -59,7 +59,7 @@ public class ControlStock {
                         opcionBe = Integer.parseInt(teclado.next()); //se lee la opcion ingresada por el usuario
                         switch (opcionBe) {
                             case 1 -> MenuBebidas.menuBebidas(bebida, valorB, Sbebida);
-                            case 2 -> EntradaBebidas.entradaBebidas(Sbebida, valorB, bebida, gastos);
+                            case 2 -> EntradaBebidas.entradaBebidas(Sbebida, valorB, bebida, gastos[0]);
                             case 3 -> BebidasPerdidas.bebidasPerdidas(Sbebida, valorB, bebida);
                             case 4 -> {
                     }

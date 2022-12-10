@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EntradaBebidas {
 
-    public static void entradaBebidas(double[] Sbebida, double valorB, String[] bebida, double gastos) {
+    public static void entradaBebidas(double[] Sbebida, double valorB, String[] bebida, double gastos[]) {
         // Mostramos todas las bebidas para que se elija a la que se desee agregar stock
         int i, opcion, aux, precio;
         Scanner teclado = new Scanner(System.in);
