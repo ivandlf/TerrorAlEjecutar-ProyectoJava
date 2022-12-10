@@ -18,16 +18,16 @@ public class MenuPrincipal {
 	String cajero[] = new String[1];
         String cocinero[] = new String[1];
 	double ganancias[] = new ganancias[1] ;
-        Double gastos[] = new Double[1];
-        Double horasT[] = new Double[1];
+        Double gastos[] = new double[1];
+        Double horasT[] = new double[1];
 	String minuta[] = new String[1];
         int num;
 	int ordenes;
         int ordenessumatoria;
-	double pagoB[] = new Double[1];
-        double pagoC[] = new Double[1];
-	double pagoCA[] = new Double[1];
-	double salario[] = new Double[1];
+	double pagoB[] = new double[1];
+        double pagoC[] = new double[1];
+	double pagoCA[] = new double[1];
+	double salario[] = new double[1];
         double Shamburguesa, Sharina, Smilanesa;
 
         double SpanH, SpanL, Squeso;
