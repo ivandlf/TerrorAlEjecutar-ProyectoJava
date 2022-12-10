@@ -6,7 +6,8 @@ public class EntradaBebidas {
 
     public static void entradaBebidas(double[] Sbebida, double valorB, String[] bebida, double gastos[]) {
         // Mostramos todas las bebidas para que se elija a la que se desee agregar stock
-        int i, opcion, aux, precio;
+        int i, opcion, aux;
+        double precio;
         Scanner teclado = new Scanner(System.in);
         System.out.println("");
         System.out.println("------------------------------------");
@@ -25,8 +26,8 @@ public class EntradaBebidas {
             Sbebida[opcion] = Sbebida[opcion] + aux; // Aumentamos la cantidad ingresada al stock total
             System.out.println("");
             System.out.println("Ingrese precio por botella");
-            precio = Integer.parseInt(teclado.nextLine());
-            gastos = gastos + (precio + aux); // Sumamos los gastos de la compra de las bebudas a gastis totales
+            precio = Integer.Double.parseDouble(teclado.nextLine());
+            gastos[0] += (precio + aux); // Sumamos los gastos de la compra de las bebudas a gastis totales
         }
     }
 }
