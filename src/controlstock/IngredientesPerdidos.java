@@ -57,7 +57,7 @@ public class IngredientesPerdidos {
                 break;
             case 4:
                 System.out.println("Ingrese la cantidad de hamburguesas perdidas: ");
-                Shamburguesa = Integer.parseInt(teclado.next());
+                Shamburguesa[0] = Integer.parseInt(teclado.next());
                 Shamburguesa[0] -= Perdida;
                 break;
             case 5:

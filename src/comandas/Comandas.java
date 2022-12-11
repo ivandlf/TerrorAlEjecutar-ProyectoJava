@@ -4,7 +4,7 @@ package comandas;
 import java.util.Scanner;
 
 public class Comandas {
-    public static void Comandas(double ganancias[], double sbebida[], int valorm[], double valorsnk[], int valorp[], int valorb[], double shamburguesa[], double squeso[], double spanl[], double spanh[], double sharina[], double smilanesa[], int ordenessumatoria[], String listacomanda[][], double ordenes[], double precioP[], double precioM[], double precioB[], String pizza[], String bebida[], String minuta[], String bandera[]) {
+    public static void Comandas(double ganancias[], double sbebida[], int valorm[], int valorsnk[], int valorp[], int valorb[], double shamburguesa[], double squeso[], double spanl[], double spanh[], double sharina[], double smilanesa[], int ordenessumatoria[], String listacomanda[][], int ordenes[], double precioP[], double precioM[], double precioB[], String pizza[], String bebida[], String minuta[], String bandera[]) {
         Scanner entrada = new Scanner(System.in);
        // Le damos valores a las distintas comidas,productos y stock
          
@@ -131,7 +131,7 @@ public class Comandas {
                                                     precioTotal += precioP[opcionPi]*cantidadpi;
                                                     System.out.println(precioTotal);
                                                 }
-                                                else if(opcionPi==valorp+1){
+                                                else if(opcionPi==valorp[0]+1){
                                                     listacomanda[i+1][2]="Nada";
                                                     precioTotal += 0;
                                                 }
@@ -241,7 +241,7 @@ public class Comandas {
                             }    
                         }
                     }
-                    ordenessumatoria += ordenes;
+                    ordenessumatoria[0] += ordenes[0];
                 }
             }
             System.out.println("ganancias: "+ganancias[0]);

@@ -84,7 +84,7 @@ public class Ingredientes {
                     System.out.println("Determinar la cantidad de milanesas por kilo ");
                     milanesa = Integer.parseInt(teclado.next());
                     gastos[0] += (kgMilanesa * Pmilanesa); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    Smilanesa[0] += (Smilanesa * milanesa); // Suma al stock el nuevo stock de dicho ingrediente.
+                    Smilanesa[0] += (Smilanesa[0] * milanesa); // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 6: // Opcion 6
@@ -93,7 +93,7 @@ public class Ingredientes {
                     System.out.println("Ingresar el precio del KG de harina: ");
                     Pharina = Integer.parseInt(teclado.next());
                     gastos[0] += (harina * Pharina); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    Sharina[] += harina; // Suma al stock el nuevo stock de dicho ingrediente.
+                    Sharina[0] += harina; // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 7: // Opcion 7: Salir. Sale del condicional.

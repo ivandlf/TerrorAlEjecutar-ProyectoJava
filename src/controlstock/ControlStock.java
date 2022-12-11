@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ControlStock {
 
-    public static void controlStock(String[] bebida, double valorB[], double[] Sbebida, double[] Ssnack, String[] snack, double valorSNK[], double gastos[], double ganancias [], double Shamburguesa[], double Squeso[], double SpanL[], double SpanH[], double Sharina[], double Smilanesa[]) {
+    public static void controlStock(String[] bebida, int valorB[], double[] Sbebida, double[] Ssnack, String[] snack, int valorSNK[], double gastos[], double ganancias [], double Shamburguesa[], double Squeso[], double SpanL[], double SpanH[], double Sharina[], double Smilanesa[]) {
 
         Scanner teclado = new Scanner(System.in);
         

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Menu {
    
-    public static void Menu(double valorM[], double valorSNK[], double valorP[], double valorB[], double[] precioP, double[] precioM, double[] precioB, String[] pizza, String[] bebida, String[] minuta, String[] snack, double[] precioSNK) {
+    public static void Menu(int valorM[], int valorSNK[], int valorP[], int valorB[], double[] precioP, double[] precioM, double[] precioB, String[] pizza, String[] bebida, String[] minuta, String[] snack, double[] precioSNK) {
     Scanner teclado = new Scanner(System.in);
     int num;
     int nuevaOpcion;
@@ -125,7 +125,7 @@ public class Menu {
                                     System.out.println("-------------------------------------");                                    
                                     nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                                     
-                                    if(nuevaOpcion==Math. round(valorM+1)){
+                                    if(nuevaOpcion==Math. round(valorM[0]+1)){
                                         valorM[0] = valorM[0]+1;
                                     }
                                     if(nuevaOpcion<=valorM[0]){
@@ -177,7 +177,7 @@ public class Menu {
                                     nuevaOpcion = Integer.parseInt(teclado.next()); // Se lee opcion ingresada por el usuario
                                     
                                     if(nuevaOpcion==(valorSNK[0]+1)){
-                                        valorSNK = valorSNK[0]+1;
+                                        valorSNK[0] += 1;
                                         
                                     }
                                     if(nuevaOpcion<=valorSNK[0]){
