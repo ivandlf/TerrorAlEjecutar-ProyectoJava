@@ -22,11 +22,11 @@ public class EntradaBebidas {
 
         if (opcion <= valorB[0]) {
             System.out.println("Ingrese la cantidad de botellas ingresadas: ");
-            aux = Integer.parseInt(teclado.nextLine());
+            aux = Integer.parseInt(teclado.next());
             Sbebida[opcion] = Sbebida[opcion] + aux; // Aumentamos la cantidad ingresada al stock total
             System.out.println("");
             System.out.println("Ingrese precio por botella");
-            precio = Double.parseDouble(teclado.nextLine());
+            precio = Double.parseDouble(teclado.next());
             gastos[0] += (precio + aux); // Sumamos los gastos de la compra de las bebudas a gastis totales
         }
     }
