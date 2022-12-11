@@ -29,10 +29,10 @@ public class EntradaSnack {
         
         if (Opcion <= valorSNK[0]){ // Si la opcion este dentro de las opciones, ingresamos la cantidad comprada.
             System.out.println("Ingrese la cantidad de KG ingresados.");
-            aux = double.parseDouble(teclado.next());
+            aux = Double.parseDouble(teclado.next());
             Ssnack[Opcion] +=  aux; // Ingresamos la cantidad de snacks comprados y la añadimos al stock.
             System.out.println("Ingrese el precio por KG.");
-            precio = double.parseDouble(teclado.next());
+            precio = Double.parseDouble(teclado.next());
             gastos[0] += (precio * aux); // Sumamos el valor de la compra a gastos.
             System.out.println("");
         }

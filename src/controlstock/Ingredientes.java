@@ -12,7 +12,7 @@ public class Ingredientes {
         
         Scanner teclado = new Scanner(System.in);
 
-        double Pqueso, packH, packL, PpanL, PpanH , Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
+        double Pqueso, packH, packL, PpanL, PpanH = 0 , Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
 
         int num;
 
@@ -38,9 +38,9 @@ public class Ingredientes {
             switch (num) {
                 case 1: // Opcion: 1
                     System.out.println("Ingresar la cantidad de KG de queso que ingresan a stock.");
-                    queso = double.parseDouble(teclado.next());
+                    queso = Double.parseDouble(teclado.next());
                     System.out.println("Determinar el precio del KG de queso: ");
-                    Pqueso = double.parseDouble(teclado.next());
+                    Pqueso = Double.parseDouble(teclado.next());
                     gastos[0] += (queso * Pqueso); // Se hace una suma iterativa de gastos, as� se van sumando todos los precios de los productos.
                     Squeso[0] += queso;
                     break;

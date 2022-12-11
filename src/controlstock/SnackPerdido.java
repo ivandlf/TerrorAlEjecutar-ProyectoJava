@@ -29,7 +29,7 @@ public class SnackPerdido {
        
         if (Opcion <= valorSNK[0]){
             System.out.println("Ingrese la cantidad de KG perdidos.");
-            aux = double.parseDouble(teclado.next()); // Lee la opción ingresada por el usuario.
+            aux = Double.parseDouble(teclado.next()); // Lee la opción ingresada por el usuario.
             Ssnack[Opcion] +=  aux;
             // Borrar pantalla.
         }
