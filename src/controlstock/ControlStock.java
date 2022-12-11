@@ -150,7 +150,7 @@ public class ControlStock {
                                 System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
                                 System.out.println(" -----------------------------------------------------------------------------------------------");
                         }
-                    } while ( opcionCMD != 4);
+                    } while ( opcionCMD != 4 );
 
                 case 3:
                     do {
@@ -189,10 +189,10 @@ public class ControlStock {
                                 System.out.println("");
                                 break;
                         }
-                    } while ( opcionSNK != 4);
-                case 4{
-                        break;
-                    }
+                    } while ( opcionSNK != 4 );
+                case 4:
+                    break;
+                
             }
         } while (opcion != 4);
     }
