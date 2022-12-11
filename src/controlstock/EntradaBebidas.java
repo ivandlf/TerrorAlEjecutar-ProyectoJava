@@ -38,7 +38,7 @@ public class EntradaBebidas {
                                     System.out.println("");
             }
 
-        }while(opcion != (valorB[0]+1)
+        }while(opcion != (valorB[0]+1);
        
     }
 }
