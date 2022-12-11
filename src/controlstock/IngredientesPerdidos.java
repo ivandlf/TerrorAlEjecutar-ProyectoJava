@@ -11,7 +11,7 @@ public class IngredientesPerdidos {
     public static void ingredientesPerdidos(double Shamburguesa[], double Squeso[], double SpanL[], double SpanH[], double Sharina[], double Smilanesa[]) {
         // Este subproceso sirve para marcar aquellos ingredientes perdidos o echados a perder.
         Scanner teclado = new Scanner(System.in);
-        float Perdida;
+        double Perdida;
         int num;
         Perdida = 0;
         System.out.println(" ");
@@ -67,7 +67,7 @@ public class IngredientesPerdidos {
                 break;
             case 6:
                 System.out.println("Ingrese en KG la cantidad de harina perdida: ");
-                Perdida = double.parseDouble(teclado.next());
+                Perdida = Double.parseDouble(teclado.next());
                 Sharina[0] -= Perdida;
                 break;
             case 7:
