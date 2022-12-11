@@ -188,7 +188,7 @@ public class ControlStock {
                                 System.out.println("");
                                 break;
                         }
-                    } while (opcion != 5);
+                    } while (opcionSNK != 5);
             }
         } while (opcion != 4);
     }
