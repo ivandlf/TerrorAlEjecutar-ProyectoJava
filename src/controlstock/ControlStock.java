@@ -138,7 +138,7 @@ public class ControlStock {
                             
                         }
                         System.out.println("-----------------------------------------");
-                        opcionCMD = Integer.parseInt(teclado.nextLine());//Se lee la opcion ingresada por el usuario
+                        opcionCMD = Integer.parseInt(teclado.next());//Se lee la opcion ingresada por el usuario
                         switch (opcionCMD) {
                             case 1:
                                 MenuIngredientes.menuIngredientes(SpanH, Squeso, Sharina, SpanL, Shamburguesa, Smilanesa);
@@ -180,7 +180,7 @@ public class ControlStock {
                         }
                         
                         System.out.println("-------------------------");
-                        opcionSNK = Integer.parseInt(teclado.nextLine());
+                        opcionSNK = Integer.parseInt(teclado.next());
                         
                         switch (opcionSNK) {
                             case 1:

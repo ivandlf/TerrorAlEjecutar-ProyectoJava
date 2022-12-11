@@ -17,7 +17,7 @@ public class BebidasPerdidas {
         }
         System.out.println(Math. round(valorB[0] + 1) + "- Volver");
         System.out.println("------------------------------------");
-        opcion = Integer.parseInt(teclado.nextLine());
+        opcion = Integer.parseInt(teclado.next());
         if (opcion <= valorB[0]) {
             System.out.println("Ingrese la cantidad de botellas perdidas");
             aux = Integer.parseInt(teclado.nextLine());
