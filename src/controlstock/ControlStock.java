@@ -65,6 +65,7 @@ public class ControlStock {
                                 System.out.println("------------------------------------------------------------------------------------------------");
                                 System.out.println("");
                                 System.out.println("");
+                                break;
                     }
                         }
                     } while(opcionBe != 5 || opcionBe != 4);
@@ -189,7 +190,10 @@ public class ControlStock {
                                 break;
                         }
                     } while (opcionSNK != 5 || opcionSNK != 4);
+                case 4{
+                        break;
+                    }
             }
-        } while (opcion != 4);
+        } while (opcion != 4 || opcionSNK != 5 || opcionBe != 5 || opcionCMD |=5);
     }
 }
