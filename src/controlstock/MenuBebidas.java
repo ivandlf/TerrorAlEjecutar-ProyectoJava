@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MenuBebidas {
 
-    public static void menuBebidas(String[] bebida, int valorB[0], double[] Sbebida) {
+    public static void menuBebidas(String[] bebida, int valorB[], double[] Sbebida) {
         Scanner teclado = new Scanner(System.in);
         int i;
         System.out.println("");
