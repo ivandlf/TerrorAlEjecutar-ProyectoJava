@@ -99,46 +99,43 @@ public class ControlStock {
                         
                         if (SpanL[0] <= 10) {//Aviso de que hay que pedir más mercaderia
                             System.out.println("Hay mucha cantidad de packs de panes de lomos. No pedir más de momento");
-                        } else {
-                            if (SpanL[0] >= 60) {//Aviso de que hay que pedir menos mercaderia
+                        } else if (SpanL[0] >= 60) {//Aviso de que hay que pedir menos mercaderia
                                 System.out.println("Hay mucha cantidad de packs de panes de lomos. No pedir más de momento");
-                            }
+                            
                         }
 
                         if (SpanH[0] <= 10) {
                             System.out.println("Quedan pocos panes de hamburguesas. Pedir un poco más");
-                        } else {
-                            if (SpanH[0] <= 100) {//Aviso de que hay que pedir más mercaderia
+                        } else if (SpanH[0] <= 100) {//Aviso de que hay que pedir más mercaderia
                                 System.out.println("Quedan pocos panes de hamburguesas. Pedir un poco más");
-                            }
+                            
                         }
                         if (Smilanesa[0] <= 10) {
                             System.out.println("Quedan pocas milanesas, pedir un poco más ");
-                        } else {
-                            if (Smilanesa[0] >= 50) {
-                                System.out.println("Hay muchas milanesas, no pedir más de momento");
-                            }
+                        } else if (Smilanesa[0] >= 50) {
+                            System.out.println("Hay muchas milanesas, no pedir más de momento");
+                            
                         }
                         if (Sharina[0] <= 15) {
                             System.out.println("Hay pocos kg de harina, pedir un poco más");
-                        } else {
-                            if (Sharina[0] >= 100) {
-                                System.out.println("Hay muchos kg de harina, no pedir más de momento");
-                            }
+                        } 
+                        else if (Sharina[0] >= 100) {
+                            System.out.println("Hay muchos kg de harina, no pedir más de momento");
+                            
                         }
                         if (Squeso[0] <= 3) {
                             System.out.println("Queda poca cantidad de queso, perdir más");
-                        } else {
-                            if (Squeso[0] >= 15) {
+                        } 
+                        else if (Squeso[0] >= 15) {
                                 System.out.println("Hay mucha cantidad de queso, no pedir más de momento");
-                            }
                         }
+                        
                         if (Shamburguesa[0] <= 10) {
                             System.out.println("Quedan pocas hamburguesas, pedir más");
-                        } else {
-                            if (Shamburguesa[0] > 100) {
-                                System.out.println("Hay muchas hamburguesas, no pedir más de momento");
-                            }
+                        } 
+                        else if (Shamburguesa[0] > 100) {
+                            System.out.println("Hay muchas hamburguesas, no pedir más de momento");
+                            
                         }
                         System.out.println("-----------------------------------------");
                         opcionCMD = Integer.parseInt(teclado.nextLine());//Se lee la opcion ingresada por el usuario

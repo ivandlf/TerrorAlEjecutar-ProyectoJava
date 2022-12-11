@@ -42,7 +42,7 @@ public class IngredientesPerdidos {
             // En cada una de las opciones se pedir� cu�nto se ha perdido y se restar� con el stock existente.
             case 1: 
                 System.out.println("Ingrese en KG la cantidad de queso perdido: ");
-                Perdida = Integer.parseInt(teclado.next());
+                Perdida = double.parseDouble(teclado.next());
                 Squeso[0] -= Perdida;
                 break;
             case 2:
@@ -57,7 +57,7 @@ public class IngredientesPerdidos {
                 break;
             case 4:
                 System.out.println("Ingrese la cantidad de hamburguesas perdidas: ");
-                Shamburguesa[0] = Integer.parseInt(teclado.next());
+                Perdida = Integer.parseInt(teclado.next());
                 Shamburguesa[0] -= Perdida;
                 break;
             case 5:
@@ -67,7 +67,7 @@ public class IngredientesPerdidos {
                 break;
             case 6:
                 System.out.println("Ingrese en KG la cantidad de harina perdida: ");
-                Perdida = Integer.parseInt(teclado.next());
+                Perdida = double.parseDouble(teclado.next());
                 Sharina[0] -= Perdida;
                 break;
             case 7:
