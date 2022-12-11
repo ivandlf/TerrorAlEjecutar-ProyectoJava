@@ -12,7 +12,7 @@ public class Ingredientes {
         
         Scanner teclado = new Scanner(System.in);
 
-        float Pqueso, packH, packL, PpanL, PpanH = 0 , Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
+        double Pqueso, packH, packL, PpanL, PpanH , Pharina, Phamburguesa, Pmilanesa, harina, PanL, PanH, hamburguesa, milanesa, queso, kgMilanesa;
 
         int num;
 
@@ -38,9 +38,9 @@ public class Ingredientes {
             switch (num) {
                 case 1: // Opcion: 1
                     System.out.println("Ingresar la cantidad de KG de queso que ingresan a stock.");
-                    queso = Integer.parseInt(teclado.next());
+                    queso = double.parseDouble(teclado.next());
                     System.out.println("Determinar el precio del KG de queso: ");
-                    Pqueso = Integer.parseInt(teclado.next());
+                    Pqueso = double.parseDouble(teclado.next());
                     gastos[0] += (queso * Pqueso); // Se hace una suma iterativa de gastos, as� se van sumando todos los precios de los productos.
                     Squeso[0] += queso;
                     break;
@@ -84,7 +84,7 @@ public class Ingredientes {
                     System.out.println("Determinar la cantidad de milanesas por kilo ");
                     milanesa = Integer.parseInt(teclado.next());
                     gastos[0] += (kgMilanesa * Pmilanesa); // Se hace una suma iterativa de gastos, asi se van sumando todos los precios de los productos.
-                    Smilanesa[0] += (Smilanesa[0] * milanesa); // Suma al stock el nuevo stock de dicho ingrediente.
+                    Smilanesa[0] += (kgMilanesa * milanesa); // Suma al stock el nuevo stock de dicho ingrediente.
                     break;
 
                 case 6: // Opcion 6
