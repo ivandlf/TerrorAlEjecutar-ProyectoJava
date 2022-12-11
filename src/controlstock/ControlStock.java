@@ -165,6 +165,7 @@ public class ControlStock {
                         System.out.println("|           3 - Stock perdido             |");
                         System.out.println("|           4 - Volver                    |");
                         System.out.println("|                                         |");
+                        System.out.println("|                                         |");
                         System.out.println(" -----------------------------------------");
 
                     
