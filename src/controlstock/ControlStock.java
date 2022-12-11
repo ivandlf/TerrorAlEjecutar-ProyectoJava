@@ -67,7 +67,7 @@ public class ControlStock {
                                 System.out.println("");
                     }
                         }
-                    } while(opcion != 5);
+                    } while(opcionBe != 5);
 
                     break;
 
@@ -149,7 +149,7 @@ public class ControlStock {
                                 System.out.println("| La opción que ha ingresado no es correcta. Por favor, digite una que se encuentre en el menú. |");
                                 System.out.println(" -----------------------------------------------------------------------------------------------");
                         }
-                    } while (opcion != 5);
+                    } while (opcionCMD != 5);
 
                 case 3:
                     do {
