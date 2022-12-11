@@ -20,7 +20,7 @@ public class BebidasPerdidas {
         opcion = Integer.parseInt(teclado.next());
         if (opcion <= valorB[0]) {
             System.out.println("Ingrese la cantidad de botellas perdidas");
-            aux = Integer.parseInt(teclado.nextLine());
+            aux = Integer.parseInt(teclado.next());
             Sbebida[opcion] = Sbebida[opcion] - aux;//Disminuimos la cantidad de bebida perdidas del stock
         }
     }
