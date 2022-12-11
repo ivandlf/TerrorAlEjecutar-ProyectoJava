@@ -15,7 +15,7 @@ public class ControlStock {
             System.out.println(" -----------------------------------------");
             System.out.println("|                                         |");
             System.out.println("|-----------------------------------------|");
-            System.out.println("|************** MENÚ STOCK ***************|");
+            System.out.println("|************** MENU STOCK ***************|");
             System.out.println("|-----------------------------------------|");
             System.out.println("|                                         |");
             System.out.println("|         * Opción 1: Bebidas             |");

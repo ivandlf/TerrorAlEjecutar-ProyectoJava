@@ -5,7 +5,7 @@ public class MenuIngredientes {
     public static void menuIngredientes(double SpanH[], double Squeso[], double Sharina[], double SpanL[], double Shamburguesa[], double Smilanesa[]) {
 
 // ----------------------------
-// SUBPROCESO MEN� INGREDIENTES        
+// SUBPROCESO MENU INGREDIENTES        
 // ----------------------------
         System.out.println("*********** STOCK *************");
         System.out.println("-------------------------------");
