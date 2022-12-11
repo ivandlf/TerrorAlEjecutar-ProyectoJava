@@ -20,7 +20,7 @@ public class EntradaBebidas {
         System.out.println("------------------------------------");
         opcion = Integer.parseInt(teclado.next()); // Leemos la opcion de bebida
 
-        if (opcion == valorB[0]) {
+        if (opcion <= valorB[0]) {
             System.out.println("Ingrese la cantidad de botellas ingresadas: ");
             aux = Integer.parseInt(teclado.nextLine());
             Sbebida[opcion] = Sbebida[opcion] + aux; // Aumentamos la cantidad ingresada al stock total

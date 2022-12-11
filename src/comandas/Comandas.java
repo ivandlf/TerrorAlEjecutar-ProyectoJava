@@ -29,7 +29,7 @@ public class Comandas {
                 case 1 -> {
                     // en caso de que hayan comandas, se habilitara esta seccion y se recorreran las matrices mostrando las comandas guardadas
                     // En caso de que no, se mostrara un mensaje pidiendo que se tomen ordenes
-                    if(bandera.equals("v")){
+                    if(bandera[0].equals("v")){
                         //Mostramos los titulos de la matriz
                         System.out.println("+---+----------+--------------------+--------------------+--------------------+--------------------+");
                          for (int i = 0; i < 1; i++) {
