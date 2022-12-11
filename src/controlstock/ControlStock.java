@@ -47,14 +47,6 @@ public class ControlStock {
                         System.out.println(" ----------------------------------------- ");
                         System.out.println("");
 
-                        System.out.println("*** Avisos *** ");
-                        System.out.println("--------------------------");
-
-                        for (i = 0; i <= valorB[0]; i++) {
-                            System.out.println(i + "Bajo stock de" + bebida[i]);
-                        }
-                        System.out.println("--------------------------");
-                        System.out.println("");
 
                         opcionBe = Integer.parseInt(teclado.next()); //se lee la opcion ingresada por el usuario
                         switch (opcionBe) {
@@ -173,13 +165,8 @@ public class ControlStock {
                         System.out.println("|           4 - Volver                    |");
                         System.out.println("|           5 - Salir                     |");
                         System.out.println(" -----------------------------------------");
-                        System.out.println(" ***Avisos***");
-                        System.out.println("-------------------------");
-                        for (i = 0; i <= valorSNK[0]; i++) {
-                            System.out.println(i + "Bajo stock de " + snack[i]);
-                        }
-                        
-                        System.out.println("-------------------------");
+
+                    
                         opcionSNK = Integer.parseInt(teclado.next());
                         
                         switch (opcionSNK) {
